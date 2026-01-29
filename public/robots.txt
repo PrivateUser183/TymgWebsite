@@ -1,0 +1,57 @@
+# Robots.txt for Hyper Local E-commerce Platform
+# This file tells search engines which pages they can and cannot crawl
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /my-account/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /*?*sort=*
+Disallow: /*?*page=*
+Disallow: /search?
+
+# Allow specific important pages
+Allow: /products/
+Allow: /categories/
+Allow: /brands/
+Allow: /stores/
+Allow: /about-us/
+Allow: /faqs/
+Allow: /privacy-policy/
+Allow: /terms-and-conditions/
+Allow: /shipping-policy/
+Allow: /return-refund-policy/
+
+# Sitemap location
+Sitemap: {{SITE_URL}}/sitemap.xml
+Sitemap: {{SITE_URL}}/sitemap-products.xml
+Sitemap: {{SITE_URL}}/sitemap-categories.xml
+Sitemap: {{SITE_URL}}/sitemap-stores.xml
+
+# Crawl delay (be nice to servers)
+Crawl-delay: 1
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /my-account/
+Disallow: /cart/
+Disallow: /checkout/
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /my-account/
+Disallow: /cart/
+Disallow: /checkout/
+
+# Block bad bots
+User-agent: MJ12bot
+User-agent: AhrefsBot
+User-agent: SemrushBot
+Disallow: /
