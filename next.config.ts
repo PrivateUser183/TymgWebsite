@@ -22,7 +22,7 @@ const isExport = process.env.NEXT_PUBLIC_SSR !== "true";
 
 const nextConfig: NextConfig = {
   transpilePackages: ["@heroui/system", "@heroui/react"],
-  // turbopack: {}, // Disabled due to Windows junction point errors
+  turbopack: {}, // Empty config to acknowledge we're using webpack
   reactStrictMode: true,
   output: isExport ? "export" : undefined,
   trailingSlash: true,

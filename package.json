@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "next dev --webpack",
-    "build": "npm run lint && node scripts/update-manifest.mjs && next build",
+    "build": "npm run lint && node scripts/update-manifest.mjs && next build --webpack",
     "deploy": "npm install && npm run build && node create-htaccess.js && node ftp.js",
     "start": "next start",
     "lint": "eslint --fix",
