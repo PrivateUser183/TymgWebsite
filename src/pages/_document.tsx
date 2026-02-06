@@ -11,7 +11,7 @@ export default function Document() {
         <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
         <script
           async
-          src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&loading=async`}
+          src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=places,marker&loading=async`}
         />
       </Head>
       <body

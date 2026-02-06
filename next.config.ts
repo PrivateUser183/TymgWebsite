@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 import { readFileSync } from "fs";
 import { join } from "path";
-import withPWAInit from "@ducanh2912/next-pwa";
 
 // const withPWA = withPWAInit({
 //   dest: "public",
