@@ -70,15 +70,14 @@ export const onAppLoad = () => {
 
   const userLocation = getCookie("userLocation") as UserLocation;
   if (!userLocation) {
-    // Set default location for development instead of requiring user to select
+    // Set default location to Gatineau, Quebec, Canada
     const defaultLocation: UserLocation = {
       lat: staticLat,
       lng: staticLng,
-      placeName: "Default Location (Dev Mode)",
-      placeDescription: "Bhuj, Gujarat, India",
+      placeName: "Gatineau, Quebec",
+      placeDescription: "Gatineau, QC, Canada",
     };
     setCookie<UserLocation>("userLocation", defaultLocation);
-    addToast({ color: "success", title: "Default location set for development" });
   }
 };
 

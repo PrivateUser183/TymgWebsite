@@ -85,9 +85,10 @@ export const TILE_LAYERS = [
   "https://tiles.stadiamaps.com/tiles/terrain/{z}/{x}/{y}.png",
 ];
 
-export const staticLat = 23.242;
-export const staticLng = 69.6669;
+// Gatineau, Quebec, Canada coordinates
+export const staticLat = 45.4765;
+export const staticLng = -75.7013;
 
-export const demoEmail = "user@gmail.com";
-export const demoPassword = "12345678";
-export const demoNumber = "9000000000";
+export const demoEmail = "client@tymg.ca";
+export const demoPassword = "client123";
+export const demoNumber = "8195551234";
