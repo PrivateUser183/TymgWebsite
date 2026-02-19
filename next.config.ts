@@ -52,6 +52,14 @@ const nextConfig: NextConfig = {
   env: {
     NEXT_PUBLIC_APP_VERSION: version,
   },
+  async rewrites() {
+    return [
+      {
+        source: "/storage/:path*",
+        destination: `${process.env.NEXT_PUBLIC_ADMIN_PANEL_URL}/storage/:path*`,
+      },
+    ];
+  },
   compress: true,
   poweredByHeader: false,
   compiler: {
