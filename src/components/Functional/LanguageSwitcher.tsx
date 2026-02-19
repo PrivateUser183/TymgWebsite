@@ -15,15 +15,15 @@ import { changeLanguage } from "../../../i18n";
 const languages = [
   {
     code: "en",
-    countryCode: "ca",
+    countryCode: "us",
     name: "English",
-    flag: "🇨🇦",
+    flag: "🇺🇸",
   },
   {
     code: "fr",
-    countryCode: "ca",
+    countryCode: "fr",
     name: "Français",
-    flag: "🇨🇦",
+    flag: "🇫🇷",
   },
 ];
 

@@ -114,7 +114,7 @@ export const Navbar: FC = () => {
             <span className="font-medium flex items-center gap-2">
               {systemSettings?.customerDemoModeMessage
                 ? systemSettings.customerDemoModeMessage
-                : "Currently running in Demo Mode"}
+                : t("demo_mode_message")}
             </span>
           </div>
         )}

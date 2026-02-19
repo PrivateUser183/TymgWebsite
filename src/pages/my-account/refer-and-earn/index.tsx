@@ -127,13 +127,13 @@ const ReferAndEarnPage: NextPageWithLayout = () => {
                       </div>
                     </div>
                     <div className="text-center">
-                      <div className="text-lg font-bold">Unlimited</div>
+                      <div className="text-lg font-bold">{t("referAndEarn.unlimited")}</div>
                       <div className="text-xs opacity-70">
                         {t("pages.referAndEarnPage.hero.referrals")}
                       </div>
                     </div>
                     <div className="text-center">
-                      <div className="text-lg font-bold">Instant</div>
+                      <div className="text-lg font-bold">{t("referAndEarn.instant")}</div>
                       <div className="text-xs opacity-70">
                         {t("pages.referAndEarnPage.hero.instantRewards")}
                       </div>

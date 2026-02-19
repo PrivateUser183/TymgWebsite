@@ -94,6 +94,11 @@
   "buyNow": "Buy Now",
   "by": "by",
   "cancel": "Cancel",
+  "cartStepper": {
+    "review": "Review",
+    "payment": "Payment",
+    "orderPlaced": "Order Placed"
+  },
   "cancel_item_failed_msg": "We couldn't cancel the selected item. Please try again.",
   "cancel_item_failed_title": "Cancellation Failed",
   "cancel_item_success_msg": "The selected item has been successfully cancelled.",
@@ -260,6 +265,7 @@
   "date": "Date",
   "decrease_quantity": "Decrease quantity",
   "delete": "Delete",
+  "demo_mode_message": "Currently running in Demo Mode",
   "delivering_to": "Delivering to",
   "delivering_to_your_location": "Delivering to your location",
   "delivery": "Delivery",
@@ -369,7 +375,8 @@
       "faqs": "FAQs",
       "header": "Quick Links",
       "order_now": "Order Now",
-      "stores": "Stores"
+      "stores": "Stores",
+      "become_seller": "Become a Seller"
     },
     "social": {
       "follow_us": "Follow Us"
@@ -1307,6 +1314,10 @@
   "rating": "{{ratings}} Rating",
   "ratings": "ratings",
   "recent_searches": "Recent Searches",
+  "referAndEarn": {
+    "unlimited": "Unlimited",
+    "instant": "Instant"
+  },
   "refresh": "Refresh",
   "refresh_location": "Refresh location",
   "refunded": "Refunded",

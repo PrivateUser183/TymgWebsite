@@ -1,12 +1,14 @@
 import { FC } from "react";
 import { Progress } from "@heroui/react";
+import { useTranslation } from "react-i18next";
 
 interface CartStepperProps {
   CurrentStep: number;
 }
 
 const CartStepper: FC<CartStepperProps> = ({ CurrentStep }) => {
-  const steps = ["Review", "Payment", "Order Placed"];
+  const { t } = useTranslation();
+  const steps = [t("cartStepper.review"), t("cartStepper.payment"), t("cartStepper.orderPlaced")];
 
   return (
     <div className="flex justify-between items-center gap-4 w-full max-w-md">

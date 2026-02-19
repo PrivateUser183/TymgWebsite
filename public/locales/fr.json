@@ -94,6 +94,11 @@
   "buyNow": "Acheter maintenant",
   "by": "par",
   "cancel": "Annuler",
+  "cartStepper": {
+    "review": "Révision",
+    "payment": "Paiement",
+    "orderPlaced": "Commande passée"
+  },
   "cancel_item_failed_msg": "Nous n'avons pas pu annuler l'article sélectionné. Veuillez réessayer.",
   "cancel_item_failed_title": "Échec de l'annulation",
   "cancel_item_success_msg": "L'article sélectionné a été annulé avec succès.",
@@ -260,6 +265,7 @@
   "date": "Date",
   "decrease_quantity": "Diminuer la quantité",
   "delete": "Supprimer",
+  "demo_mode_message": "Actuellement en mode démo",
   "delivering_to": "Livraison à",
   "delivering_to_your_location": "Livraison à votre emplacement",
   "delivery": "Livraison",
@@ -369,7 +375,8 @@
       "faqs": "FAQ",
       "header": "Liens rapides",
       "order_now": "Commander maintenant",
-      "stores": "Magasins"
+      "stores": "Magasins",
+      "become_seller": "Devenir vendeur"
     },
     "social": {
       "follow_us": "Suivez-nous"
@@ -1307,6 +1314,10 @@
   "rating": "{{ratings}} Évaluation",
   "ratings": "évaluations",
   "recent_searches": "Recherches récentes",
+  "referAndEarn": {
+    "unlimited": "Illimité",
+    "instant": "Instantané"
+  },
   "refresh": "Rafraîchir",
   "refresh_location": "Rafraîchir l'emplacement",
   "refunded": "Remboursé",
