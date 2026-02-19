@@ -899,6 +899,7 @@
         "description": "Présentement, il n'y a aucun magasin à afficher.",
         "title": "Aucun magasin disponible"
       },
+      "search_placeholder": "Rechercher des magasins...",
       "subtitle": "Explorez notre collection complète de",
       "title": "Tous les magasins"
     },
@@ -1317,6 +1318,26 @@
   "referAndEarn": {
     "unlimited": "Illimité",
     "instant": "Instantané"
+  },
+  "theme": {
+    "switchToDark": "Passer au mode sombre",
+    "switchToLight": "Passer au mode clair"
+  },
+  "products": {
+    "allProducts": "Tous les produits",
+    "discoverCollection": "Découvrez notre collection complète de",
+    "productsCount": "Produits"
+  },
+  "store": {
+    "closed": "Fermé",
+    "openNow": "Ouvert",
+    "offline": "Hors ligne"
+  },
+  "entityType": {
+    "product": "produit",
+    "store": "magasin",
+    "zone": "zone",
+    "section": "section"
   },
   "refresh": "Rafraîchir",
   "refresh_location": "Rafraîchir l'emplacement",

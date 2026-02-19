@@ -145,7 +145,7 @@ const StoresPage: NextPageWithLayout<StoresPageProps> = ({ initialStores }) => {
 
         {stores.length > 0 && (
           <InfiniteScrollStatus
-            entityType="store"
+            entityType={t("entityType.store")}
             total={total}
             hasMore={hasMore}
           />

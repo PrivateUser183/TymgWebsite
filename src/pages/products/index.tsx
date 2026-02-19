@@ -226,7 +226,7 @@ const ProductsPage: NextPageWithLayout<ProductsPageProps> = ({
 
       <div className="min-h-screen">
         <MyBreadcrumbs
-          breadcrumbs={[{ href: "/products", label: "Products" }]}
+          breadcrumbs={[{ href: "/products", label: t("pageTitle.products") }]}
         />
 
         <button
@@ -238,9 +238,9 @@ const ProductsPage: NextPageWithLayout<ProductsPageProps> = ({
         />
 
         <PageHeader
-          title="All Products"
-          subtitle="Discover our complete collection of"
-          highlightText={total ? ` ${total} Products` : ""}
+          title={t("products.allProducts")}
+          subtitle={t("products.discoverCollection")}
+          highlightText={total ? ` ${total} ${t("products.productsCount")}` : ""}
         />
 
         <div className="flex w-full gap-2 flex-col md:flex-row">
@@ -304,7 +304,7 @@ const ProductsPage: NextPageWithLayout<ProductsPageProps> = ({
                 />
               ) : (
                 <InfiniteScrollStatus
-                  entityType="product"
+                  entityType={t("entityType.product")}
                   total={total}
                   hasMore={hasMore}
                 />

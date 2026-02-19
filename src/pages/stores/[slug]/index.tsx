@@ -409,7 +409,7 @@ const StoreProductsPage: NextPageWithLayout<StoreProductsPageProps> = ({
 
                 {products.length > 0 && !isLoading ? (
                   <InfiniteScrollStatus
-                    entityType="product"
+                    entityType={t("entityType.product")}
                     total={total}
                     hasMore={hasMore}
                   />

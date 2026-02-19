@@ -899,6 +899,7 @@
         "description": "Currently, there are no stores to display.",
         "title": "No Stores Available"
       },
+      "search_placeholder": "Search stores...",
       "subtitle": "Explore our complete collection of",
       "title": "All Stores"
     },
@@ -1317,6 +1318,26 @@
   "referAndEarn": {
     "unlimited": "Unlimited",
     "instant": "Instant"
+  },
+  "theme": {
+    "switchToDark": "Switch to dark mode",
+    "switchToLight": "Switch to light mode"
+  },
+  "products": {
+    "allProducts": "All Products",
+    "discoverCollection": "Discover our complete collection of",
+    "productsCount": "Products"
+  },
+  "store": {
+    "closed": "Closed",
+    "openNow": "Open Now",
+    "offline": "Offline"
+  },
+  "entityType": {
+    "product": "product",
+    "store": "store",
+    "zone": "zone",
+    "section": "section"
   },
   "refresh": "Refresh",
   "refresh_location": "Refresh location",

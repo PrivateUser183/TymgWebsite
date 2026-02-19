@@ -118,7 +118,7 @@ const FeatureSectionPage: NextPageWithLayout<FeatureSectionPageProps> = ({
 
             {products.length > 0 ? (
               <InfiniteScrollStatus
-                entityType="product"
+                entityType={t("entityType.product")}
                 total={total}
                 hasMore={hasMore}
               />

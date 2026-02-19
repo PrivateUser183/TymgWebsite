@@ -104,7 +104,7 @@ const DeliveryZonesPage: NextPageWithLayout<DeliveryZonesPageProps> = ({
           {/* Status messages */}
           {zones.length > 0 ? (
             <InfiniteScrollStatus
-              entityType="zone"
+              entityType={t("entityType.zone")}
               total={total}
               hasMore={hasMore}
             />

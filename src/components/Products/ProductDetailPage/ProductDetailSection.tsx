@@ -148,7 +148,7 @@ const ProductDetailSection: FC<ProductDetailSectionProps> = ({
         {/* Rating and Reviews */}
         <article className="flex items-center gap-2">
           <Star className="fill-yellow-400 text-yellow-400 w-4 h-4 md:w-5 md:h-5" />
-          <p className="font-medium text-xs md:text-medium">{`${ratings} Rating`}</p>
+          <p className="font-medium text-xs md:text-medium">{t("rating", { ratings })}</p>
           <Link
             onPress={() => {
               makeTabClick("reviews");

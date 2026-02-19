@@ -2,6 +2,7 @@ import { FC, useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
 import clsx from "clsx";
+import { useTranslation } from "react-i18next";
 
 interface ThemeSwitchProps {
   className?: string;
@@ -14,6 +15,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
 }) => {
   const [isMounted, setIsMounted] = useState(false);
   const { theme, setTheme } = useTheme();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const id = setTimeout(() => setIsMounted(true), 0);
@@ -39,7 +41,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
     return (
       <button
         onClick={toggleTheme}
-        aria-label={`Switch to ${isLight ? "dark" : "light"} mode`}
+        aria-label={isLight ? t("theme.switchToDark") : t("theme.switchToLight")}
         className={clsx(
           "relative inline-flex items-center h-8 w-14 rounded-full transition-colors duration-300",
           isLight ? "bg-gray-300" : "bg-blue-600",
@@ -66,7 +68,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
   return (
     <button
       onClick={toggleTheme}
-      aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+      aria-label={theme === "light" ? t("theme.switchToDark") : t("theme.switchToLight")}
       className={clsx(
         "flex items-center justify-center w-8 h-8 rounded-lg transition-all hover:opacity-80 cursor-pointer",
         className

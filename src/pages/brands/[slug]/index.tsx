@@ -119,7 +119,7 @@ const BrandProductsPage: NextPageWithLayout<BrandProductsPageProps> = ({
 
             {products.length > 0 ? (
               <InfiniteScrollStatus
-                entityType="product"
+                entityType={t("entityType.product")}
                 total={total}
                 hasMore={hasMore}
               />

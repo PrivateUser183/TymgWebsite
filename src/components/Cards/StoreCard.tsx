@@ -21,8 +21,8 @@ const StoreCard: React.FC<StoreCardProps> = ({ store }) => {
   };
 
   const getStatusText = () => {
-    if (!store.status.is_open) return "Closed";
-    return store.status.status === "online" ? "Open Now" : "Offline";
+    if (!store.status.is_open) return t("store.closed");
+    return store.status.status === "online" ? t("store.openNow") : t("store.offline");
   };
 
   return (

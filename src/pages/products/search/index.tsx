@@ -224,7 +224,7 @@ const SearchResultsPage: NextPageWithLayout<ProductsPageProps> = ({
         <PageHeader
           title={`${t("search_results")} : "${safeQuery}"`}
           subtitle={t("search_placeholder")}
-          highlightText={total ? ` ${total} Products` : ""}
+          highlightText={total ? ` ${total} ${t("products.productsCount")}` : ""}
         />
 
         <div className="flex w-full gap-2 flex-col md:flex-row">
@@ -266,7 +266,7 @@ const SearchResultsPage: NextPageWithLayout<ProductsPageProps> = ({
 
               {products.length > 0 ? (
                 <InfiniteScrollStatus
-                  entityType="product"
+                  entityType={t("entityType.product")}
                   total={total}
                   hasMore={hasMore}
                 />

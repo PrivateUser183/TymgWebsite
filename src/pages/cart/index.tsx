@@ -41,7 +41,7 @@ const CartPage: NextPageWithLayout<CartPageProps> = () => {
 
       <div className="min-h-screen">
         <MyBreadcrumbs
-          breadcrumbs={[{ href: "/cart", label: "Shopping Cart" }]}
+          breadcrumbs={[{ href: "/cart", label: t("pageTitle.cart") }]}
         />
         <CartPageView />
       </div>
