@@ -67,9 +67,9 @@ export const Navbar: FC = () => {
     onClose: closeOfflineCart,
   } = useDisclosure();
   const {
-    siteHeaderLogo = "https://placehold.co/160x40?text=Logo",
-    siteHeaderDarkLogo = "https://placehold.co/160x40?text=Logo",
-    siteName = "Site Logo",
+    siteHeaderLogo = "/default-logo.png",
+    siteHeaderDarkLogo = "/default-logo.png",
+    siteName = "Tym-G",
   } = webSettings || {};
 
   useEffect(() => {

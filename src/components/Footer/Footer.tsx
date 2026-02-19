@@ -23,7 +23,7 @@ const Footer: FC = () => {
     siteCopyright = "",
     supportEmail = "",
     supportNumber = "",
-    siteFooterLogo = "https://placehold.co/160x40?text=Logo",
+    siteFooterLogo = "/default-logo.png",
     facebookLink = null,
     instagramLink = null,
     xLink = null,

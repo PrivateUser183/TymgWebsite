@@ -6,8 +6,7 @@ import { getCookie, setCookie } from "@/lib/cookies";
 
 // Languages
 import enTranslation from "./public/locales/en.json";
-import hiTranslation from "./public/locales/hi.json";
-import arTranslation from "./public/locales/ar.json";
+import frTranslation from "./public/locales/fr.json";
 
 const LANGUAGE_KEY = "i18nextLng";
 
@@ -17,11 +16,8 @@ const languages = {
   en: {
     translation: enTranslation,
   },
-  hi: {
-    translation: hiTranslation,
-  },
-  ar: {
-    translation: arTranslation,
+  fr: {
+    translation: frTranslation,
   },
 };
 
@@ -46,11 +42,7 @@ export const changeLanguage = (lng: string) => {
 
   // Ensure this code runs only in the browser
   if (typeof document !== "undefined") {
-    if (lng === "ar") {
-      document.documentElement.setAttribute("dir", "rtl");
-    } else {
-      document.documentElement.setAttribute("dir", "ltr");
-    }
+    document.documentElement.setAttribute("dir", "ltr");
   }
 };
 
