@@ -54,6 +54,48 @@ const api = axios.create({
   baseURL: url.toString(),
 });
 
+// Normalize backend shop object to frontend Store interface
+function normalizeStore(raw: any): Store {
+  if (!raw) return raw;
+  // If already normalized (has 'name' and 'slug' as strings), return as-is
+  if (typeof raw.name === "string" && typeof raw.slug === "string") return raw;
+
+  const t = raw.translation || {};
+  const loc = raw.location || {};
+  const workingDays = raw.shop_working_days || [];
+  const now = new Date();
+  const dayNames = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+  const today = dayNames[now.getDay()];
+  const todaySchedule = workingDays.find((d: any) => d.day === today);
+  const isOpen = todaySchedule ? !todaySchedule.disabled : (raw.open ?? false);
+
+  return {
+    id: raw.id,
+    name: t.title || "",
+    slug: raw.uuid || String(raw.id),
+    product_count: raw.products_count ?? 0,
+    description: t.description || "",
+    contact_number: raw.phone || "",
+    contact_email: "",
+    address: t.address || "",
+    latitude: String(loc.latitude ?? ""),
+    longitude: String(loc.longitude ?? ""),
+    distance: raw.distance ?? 0,
+    timing: raw.delivery_time ? `${raw.delivery_time.from}-${raw.delivery_time.to} ${raw.delivery_time.type}` : "",
+    logo: raw.logo_img || "",
+    banner: raw.background_img || "",
+    avg_products_rating: String(raw.avg_products_rating ?? "0"),
+    created_at: raw.created_at || "",
+    updated_at: raw.updated_at || "",
+    verification_status: raw.status === "approved" ? "approved" : raw.status === "rejected" ? "rejected" : "pending",
+    visibility_status: raw.visibility ? "visible" : "hidden",
+    status: {
+      is_open: isOpen,
+      status: isOpen ? "online" : "offline",
+    },
+  } as Store;
+}
+
 // Apply interceptors to the axios instance
 setupInterceptors(api);
 
@@ -268,10 +310,13 @@ export const getCategories = async (
     slug?: string;
     latitude?: string | number;
     longitude?: string | number;
+    type?: string;
   } = {},
 ): Promise<PaginatedResponse<Category[]>> => {
   try {
-    const response = await api.get("/categories", { params });
+    const response = await api.get("/categories", {
+      params: { type: "main", ...params },
+    });
     return response.data;
   } catch (error) {
     console.error("API error:", error);
@@ -290,7 +335,9 @@ export const getSubCategories = async (
   } = {},
 ): Promise<PaginatedResponse<Category[]>> => {
   try {
-    const response = await api.get("/categories/sub-categories", { params });
+    const response = await api.get("/categories/sub-categories", {
+      params: { type: "sub_main", ...params },
+    });
     return response.data;
   } catch (error) {
     console.error("API error:", error);
@@ -490,7 +537,12 @@ export const getStores = async (
 ): Promise<PaginatedResponse<Store[]>> => {
   try {
     const response = await api.get("/delivery-zone/stores", { params });
-    return response.data;
+    const res = response.data;
+    // Normalize store objects from backend format to frontend Store interface
+    if (res?.data?.data && Array.isArray(res.data.data)) {
+      res.data.data = res.data.data.map(normalizeStore);
+    }
+    return res;
   } catch (error) {
     console.error("API error:", error);
     return fallbackPaginateRes;
@@ -502,7 +554,11 @@ export const getSpecificStore = async (
 ): Promise<ApiResponse<Store>> => {
   try {
     const response = await api.get(`/stores/${slug}`);
-    return response.data;
+    const res = response.data;
+    if (res?.data) {
+      res.data = normalizeStore(res.data);
+    }
+    return res;
   } catch (error) {
     console.error("API error:", error);
     return fallbackApiRes;

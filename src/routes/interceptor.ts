@@ -53,6 +53,35 @@ export const setupInterceptors = (instance: AxiosInstance): void => {
       if (typeof window !== "undefined") {
         maintenanceStore.setMaintenance(false, null);
       }
+      // Normalize API response formats to match frontend expectations
+      if (response.data && typeof response.data === "object") {
+        const d = response.data;
+
+        // Map "status" field to "success" (e.g. settings endpoint returns {status: true})
+        if (!("success" in d) && "status" in d) {
+          d.success = d.status;
+        }
+
+        // Convert Laravel paginated format {data:[], meta:{...}} to frontend format
+        // Frontend expects: {success: true, data: {current_page, data:[], last_page, ...}}
+        if (Array.isArray(d.data) && "meta" in d && !("success" in d)) {
+          const meta = d.meta;
+          response.data = {
+            success: true,
+            message: "Success",
+            data: {
+              current_page: meta.current_page,
+              data: d.data,
+              from: meta.from,
+              last_page: meta.last_page,
+              per_page: meta.per_page,
+              to: meta.to,
+              total: meta.total,
+              links: meta.links,
+            },
+          };
+        }
+      }
       return response;
     },
     (error: AxiosError) => {

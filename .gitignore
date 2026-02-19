@@ -60,3 +60,4 @@ next-env.d.ts
 **/public/logo-512.png
 
 
+.env*.local

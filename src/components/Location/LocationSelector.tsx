@@ -217,7 +217,7 @@ const LocationSelector = () => {
 
           const finalLocation = demoMode
             ? {
-                placeName: "Bhuj ,Gujrat ,India",
+                placeName: "Gatineau, Quebec, Canada",
                 latLng: finalLatLng,
                 placeDescription: "",
               }
