@@ -57,17 +57,13 @@ const api = axios.create({
 // Normalize backend shop object to frontend Store interface
 function normalizeStore(raw: any): Store {
   if (!raw) return raw;
-  // If already normalized (has 'name' and 'slug' as strings), return as-is
-  if (typeof raw.name === "string" && typeof raw.slug === "string") return raw;
+  // If already in our backend format (has 'name' and 'slug'), return as-is
+  if (typeof raw.name === "string" && typeof raw.slug === "string") return raw as Store;
 
+  // Legacy format — translate fields
   const t = raw.translation || {};
   const loc = raw.location || {};
-  const workingDays = raw.shop_working_days || [];
-  const now = new Date();
-  const dayNames = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
-  const today = dayNames[now.getDay()];
-  const todaySchedule = workingDays.find((d: any) => d.day === today);
-  const isOpen = todaySchedule ? !todaySchedule.disabled : (raw.open ?? false);
+  const isOpen = raw.open ?? true;
 
   return {
     id: raw.id,
@@ -583,32 +579,6 @@ export const getStores = async (
     // Normalize store objects from backend format to frontend Store interface
     if (res?.data?.data && Array.isArray(res.data.data)) {
       res.data.data = res.data.data.map(normalizeStore);
-
-      let stores = res.data.data;
-
-      // Remove up to 300 restaurants from the array
-      if (stores.length > 300) {
-        stores = stores.slice(300);
-      } else {
-        stores = [];
-      }
-      res.data.data = stores;
-
-      // Reset all temporarily to closed
-      stores.forEach((store: Store) => {
-        store.status.is_open = false;
-        store.status.status = "offline";
-        store.timing = "09:00 AM - 10:00 PM";
-      });
-
-      // Randomly open 50% of the remaining stores
-      const numToOpen = Math.ceil(stores.length * 0.5);
-      const shuffled = [...stores].sort(() => 0.5 - Math.random());
-      for (let i = 0; i < numToOpen; i++) {
-        shuffled[i].status.is_open = true;
-        shuffled[i].status.status = "online";
-        shuffled[i].timing = "Open 24/7";
-      }
     }
     return res;
   } catch (error) {

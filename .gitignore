@@ -53,10 +53,6 @@ next-env.d.ts
 **/public/sw.js.map
 **/public/workbox-*.js.map
 **/public/worker-*.js.map
-# Ignore specific PNG files
-**/public/logo-144.png
-**/public/logo-192.png
-**/public/logo-512.png
 
 
 .env*.local
