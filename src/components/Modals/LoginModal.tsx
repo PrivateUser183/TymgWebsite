@@ -389,10 +389,10 @@ export const LoginModal: FC<LoginModalProps> = ({ triggerView = "btn" }) => {
                       onSelectionChange={handleTabChange}
                       classNames={{
                         tabList: "bg-default-100",
-                        cursor: "w-full bg-primary dark:bg-primary",
-                        tab: "max-w-fit",
+                        cursor: "hidden",
+                        tab: "max-w-fit data-[selected=true]:!bg-primary data-[selected=true]:!rounded-small",
                         tabContent:
-                          "text-default-900 group-data-[selected=true]:text-primary-foreground",
+                          "text-default-900 group-data-[selected=true]:!text-white",
                       }}
                     >
                       <Tab

@@ -142,7 +142,14 @@ export default function FirebaseInitializer({
         if (typeof window !== "undefined") {
           try {
             const auth = firebaseInstance.auth;
-            auth.settings.appVerificationDisabledForTesting = false;
+
+            // In development, enable debug mode for App Check / reCAPTCHA
+            const isDev = process.env.NODE_ENV === "development";
+            if (isDev) {
+              (self as any).FIREBASE_APPCHECK_DEBUG_TOKEN = true;
+            }
+
+            auth.settings.appVerificationDisabledForTesting = isDev;
 
             console.log("Firebase initialized successfully");
 
