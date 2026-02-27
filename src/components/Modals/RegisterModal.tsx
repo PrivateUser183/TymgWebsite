@@ -81,6 +81,29 @@ export const RegisterModal: FC = () => {
   });
   const [isCheckingEmail, setIsCheckingEmail] = useState(false);
   const [isCheckingPhone, setIsCheckingPhone] = useState(false);
+  const [resendCooldown, setResendCooldown] = useState(0);
+  const cooldownRef = useRef<NodeJS.Timeout | null>(null);
+
+  const startCooldown = useCallback((seconds: number = 60) => {
+    setResendCooldown(seconds);
+    if (cooldownRef.current) clearInterval(cooldownRef.current);
+    cooldownRef.current = setInterval(() => {
+      setResendCooldown((prev) => {
+        if (prev <= 1) {
+          if (cooldownRef.current) clearInterval(cooldownRef.current);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+  }, []);
+
+  // Clean up cooldown on unmount
+  useEffect(() => {
+    return () => {
+      if (cooldownRef.current) clearInterval(cooldownRef.current);
+    };
+  }, []);
 
   // Clean up function
   const cleanupModalState = useCallback(() => {
@@ -100,6 +123,8 @@ export const RegisterModal: FC = () => {
     setIsCheckingEmail(false);
     setIsCheckingPhone(false);
     setIsEmailPrefilled(false);
+    setResendCooldown(0);
+    if (cooldownRef.current) clearInterval(cooldownRef.current);
 
     if (window.confirmationResult) {
       window.confirmationResult = undefined;
@@ -339,6 +364,7 @@ export const RegisterModal: FC = () => {
     const success = await handleSignUp(phoneNumber, firebaseInstance);
     if (success) {
       setStep("otp");
+      startCooldown(60);
     }
     setIsLoading(false);
   };
@@ -428,7 +454,10 @@ export const RegisterModal: FC = () => {
       return;
     }
 
-    await handleResendOtp(phoneNumber, firebaseInstance);
+    const success = await handleResendOtp(phoneNumber, firebaseInstance);
+    if (success) {
+      startCooldown(60);
+    }
     setIsLoading(false);
   };
 
@@ -733,9 +762,12 @@ export const RegisterModal: FC = () => {
                             size="sm"
                             onPress={handleResendCode}
                             isLoading={isLoading}
+                            isDisabled={resendCooldown > 0}
                             className="text-sm"
                           >
-                            {t("register_modal.buttons.resend_code")}
+                            {resendCooldown > 0
+                              ? `${t("register_modal.buttons.resend_code")} (${resendCooldown}s)`
+                              : t("register_modal.buttons.resend_code")}
                           </Button>
                         </div>
                       </div>
