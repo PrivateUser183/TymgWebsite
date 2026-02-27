@@ -70,8 +70,8 @@ export const LoginModal: FC<LoginModalProps> = ({ triggerView = "btn" }) => {
   );
 
   const [loginMode, setLoginMode] = useState<LoginMode>("mobile");
-  const [isEmailReadOnly, setIsEmailReadOnly] = useState(true);
-  const [isMobileReadOnly, setIsMobileReadOnly] = useState(true);
+  const [isEmailReadOnly, setIsEmailReadOnly] = useState(false);
+  const [isMobileReadOnly, setIsMobileReadOnly] = useState(false);
 
   const { t } = useTranslation();
   const dispatch = useDispatch();
@@ -210,10 +210,8 @@ export const LoginModal: FC<LoginModalProps> = ({ triggerView = "btn" }) => {
 
     if (newMode === "email") {
       setMobileValue("");
-      setIsMobileReadOnly(true); // Reset readonly for inactive tab
     } else {
       setEmailValue("");
-      setIsEmailReadOnly(true); // Reset readonly for inactive tab
     }
   };
 
@@ -293,8 +291,8 @@ export const LoginModal: FC<LoginModalProps> = ({ triggerView = "btn" }) => {
     setPasswordValue("");
     setShowPassword(false);
     setLoginMode("email");
-    setIsEmailReadOnly(true);
-    setIsMobileReadOnly(true);
+    setIsEmailReadOnly(false);
+    setIsMobileReadOnly(false);
 
     // Force clear all inputs
     if (emailInputRef.current) emailInputRef.current.value = "";
