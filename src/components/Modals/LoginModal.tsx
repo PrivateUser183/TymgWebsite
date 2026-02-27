@@ -113,7 +113,7 @@ export const LoginModal: FC<LoginModalProps> = ({ triggerView = "btn" }) => {
       const exists = await checkEmailExists(
         email,
         setIsCheckingEmail,
-        () => {}
+        () => { }
       );
       if (!exists) {
         setErrors((prev) => ({
@@ -167,7 +167,7 @@ export const LoginModal: FC<LoginModalProps> = ({ triggerView = "btn" }) => {
       const exists = await checkPhoneExists(
         mobile,
         setIsCheckingMobile,
-        () => {}
+        () => { }
       );
       if (!exists) {
         setErrors((prev) => ({
@@ -388,10 +388,11 @@ export const LoginModal: FC<LoginModalProps> = ({ triggerView = "btn" }) => {
                       selectedKey={loginMode}
                       onSelectionChange={handleTabChange}
                       classNames={{
-                        cursor: "w-full bg-primary",
+                        tabList: "bg-default-100",
+                        cursor: "w-full bg-primary dark:bg-primary",
                         tab: "max-w-fit",
                         tabContent:
-                          "group-data-[selected=true]:text-primary-foreground",
+                          "text-default-900 group-data-[selected=true]:text-primary-foreground",
                       }}
                     >
                       <Tab
@@ -454,6 +455,8 @@ export const LoginModal: FC<LoginModalProps> = ({ triggerView = "btn" }) => {
                         placeholder={t("login_modal.mobile_placeholder")}
                         name="mobile"
                         type="tel"
+                        inputMode="tel"
+                        pattern="[0-9]*"
                         value={mobileValue}
                         onChange={(e) => handleMobileChange(e.target.value)}
                         isReadOnly={isMobileReadOnly}

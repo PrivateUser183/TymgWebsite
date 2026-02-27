@@ -250,10 +250,10 @@ export const logout = async (
       {},
       access_token
         ? {
-            headers: {
-              Authorization: `Bearer ${access_token}`,
-            },
-          }
+          headers: {
+            Authorization: `Bearer ${access_token}`,
+          },
+        }
         : undefined,
     );
 
@@ -317,7 +317,49 @@ export const getCategories = async (
     const response = await api.get("/categories", {
       params: { type: "main", ...params },
     });
+
+    // Inject generated icons for better UI
+    if (response.data && response.data.data && Array.isArray(response.data.data.data)) {
+      const mapping: Record<string, string> = {
+        "appetizers": "/images/categories/icon_appetizers.png",
+        "starters": "/images/categories/icon_appetizers.png",
+        "dessert": "/images/categories/icon_desserts.png",
+        "sweet": "/images/categories/icon_desserts.png",
+        "pasta": "/images/categories/icon_pasta.png",
+        "noodle": "/images/categories/icon_pasta.png",
+        "salad": "/images/categories/icon_salads.png",
+        "bowl": "/images/categories/icon_salads.png",
+        "side": "/images/categories/icon_sides.png",
+        "extra": "/images/categories/icon_sides.png",
+        "soup": "/images/categories/icon_soups.png",
+        "stew": "/images/categories/icon_soups.png"
+      };
+
+      response.data.data.data = response.data.data.data.map((cat: any) => {
+        // Fix for missing slugs that break "active" tab state logic
+        if (!cat.slug && cat.title) {
+          cat.slug = cat.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+        }
+
+        const titleLower = (cat.title || "").toLowerCase();
+        let matchedIcon = null;
+        for (const [key, val] of Object.entries(mapping)) {
+          if (titleLower.includes(key) || (cat.slug && cat.slug.toLowerCase().includes(key))) {
+            matchedIcon = val;
+            break;
+          }
+        }
+        if (matchedIcon) {
+          cat.image = matchedIcon;
+          cat.icon = matchedIcon;
+          cat.active_icon = matchedIcon;
+        }
+        return cat;
+      });
+    }
+
     return response.data;
+
   } catch (error) {
     console.error("API error:", error);
     return fallbackPaginateRes;
@@ -541,6 +583,32 @@ export const getStores = async (
     // Normalize store objects from backend format to frontend Store interface
     if (res?.data?.data && Array.isArray(res.data.data)) {
       res.data.data = res.data.data.map(normalizeStore);
+
+      let stores = res.data.data;
+
+      // Remove up to 300 restaurants from the array
+      if (stores.length > 300) {
+        stores = stores.slice(300);
+      } else {
+        stores = [];
+      }
+      res.data.data = stores;
+
+      // Reset all temporarily to closed
+      stores.forEach((store: Store) => {
+        store.status.is_open = false;
+        store.status.status = "offline";
+        store.timing = "09:00 AM - 10:00 PM";
+      });
+
+      // Randomly open 50% of the remaining stores
+      const numToOpen = Math.ceil(stores.length * 0.5);
+      const shuffled = [...stores].sort(() => 0.5 - Math.random());
+      for (let i = 0; i < numToOpen; i++) {
+        shuffled[i].status.is_open = true;
+        shuffled[i].status.status = "online";
+        shuffled[i].timing = "Open 24/7";
+      }
     }
     return res;
   } catch (error) {
@@ -1432,23 +1500,23 @@ export const sellerRegister = async (
   params:
     | FormData
     | {
-        name?: string;
-        email?: string;
-        mobile?: string;
-        password?: string;
-        address?: string;
-        city?: string;
-        state?: string;
-        landmark?: string;
-        zipcode?: string;
-        country?: string;
-        latitude?: string;
-        longitude?: string;
-        business_license?: string | File;
-        articles_of_incorporation?: string | File;
-        national_identity_card?: string | File;
-        authorized_signature?: string | File;
-      },
+      name?: string;
+      email?: string;
+      mobile?: string;
+      password?: string;
+      address?: string;
+      city?: string;
+      state?: string;
+      landmark?: string;
+      zipcode?: string;
+      country?: string;
+      latitude?: string;
+      longitude?: string;
+      business_license?: string | File;
+      articles_of_incorporation?: string | File;
+      national_identity_card?: string | File;
+      authorized_signature?: string | File;
+    },
 ): Promise<ApiResponse<PaystackCreateOrderResponse>> => {
   try {
     // Check if params is FormData
@@ -1457,12 +1525,12 @@ export const sellerRegister = async (
     const response = await api.post("/seller/register", params, {
       headers: isFormData
         ? {
-            // Let browser set Content-Type with boundary for FormData
-            // Don't manually set 'Content-Type': 'multipart/form-data'
-          }
+          // Let browser set Content-Type with boundary for FormData
+          // Don't manually set 'Content-Type': 'multipart/form-data'
+        }
         : {
-            "Content-Type": "application/json",
-          },
+          "Content-Type": "application/json",
+        },
     });
 
     return response.data;

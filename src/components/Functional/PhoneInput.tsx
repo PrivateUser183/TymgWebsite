@@ -373,6 +373,7 @@ const PhoneInput: FC<PhoneInputProps> = ({
           placeholder={placeholder}
           className="flex-1"
           type="tel"
+          inputMode="tel"
           maxLength={state.maxPhoneLength}
           variant={variant}
           classNames={{

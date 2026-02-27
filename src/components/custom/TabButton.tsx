@@ -49,7 +49,9 @@ const TabButton: React.FC<TabButtonProps> = ({
   }, [slug, isLoading, onClick]);
 
   const iconUrl =
-    isSelected && category?.active_icon ? category.active_icon : category?.icon;
+    isSelected && category?.active_icon
+      ? category.active_icon
+      : category?.image || category?.icon;
 
   return (
     <button
@@ -60,15 +62,13 @@ const TabButton: React.FC<TabButtonProps> = ({
         flex flex-col items-center justify-center gap-1
         px-1 py-2 sm:min-w-[72px] min-w-[50px]
         border-b-2 transition-all duration-200  hover:border-primary hover:bg-transparent
-        ${
-          isSelected
-            ? "border-primary text-primary"
-            : "border-transparent text-default-600 hover:text-default-900"
+        ${isSelected
+          ? "border-primary text-primary"
+          : "border-transparent text-default-600 hover:text-default-900"
         }
-        ${
-          isLoading
-            ? "opacity-50 cursor-not-allowed"
-            : "cursor-pointer hover:bg-default-100/50"
+        ${isLoading
+          ? "opacity-50 cursor-not-allowed"
+          : "cursor-pointer hover:bg-default-100/50"
         }
       `}
     >
