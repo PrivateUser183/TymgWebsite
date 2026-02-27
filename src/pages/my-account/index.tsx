@@ -95,6 +95,10 @@ const MyAccount: NextPageWithLayout<MyAccountPageProps> = ({ initialData }) => {
 
     try {
       const form = new FormData(e.currentTarget);
+      // Ensure mobile and location fields are included
+      form.set("mobile", formData.mobile);
+      form.set("iso_2", formData.iso_2);
+      form.set("country", formData.country);
       if (profileImageFile) form.append("profile_image", profileImageFile);
 
       const res = await updateUserData(form);
@@ -287,7 +291,7 @@ const MyAccount: NextPageWithLayout<MyAccountPageProps> = ({ initialData }) => {
 
                     <Input
                       name="email"
-                      isReadOnly={true}
+                      isReadOnly={isLoading}
                       label={t("pages.myAccount.labels.email")}
                       labelPlacement="outside"
                       isRequired
@@ -302,7 +306,7 @@ const MyAccount: NextPageWithLayout<MyAccountPageProps> = ({ initialData }) => {
                       }
                     />
                     <PhoneInput
-                      isReadOnly={true}
+                      isReadOnly={isLoading}
                       label={t("pages.myAccount.labels.phone")}
                       labelPlacement="outside"
                       defaultValue={formData.mobile}

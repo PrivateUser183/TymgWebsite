@@ -420,7 +420,9 @@ export const RegisterModal: FC = () => {
       );
 
       if (res.success) {
-        setStep("complete");
+        // User is already logged in (handleRegisterUser calls handleLoginUser)
+        // Close modal immediately so user lands on the page fully authenticated
+        onClose();
       } else {
         onClose();
       }

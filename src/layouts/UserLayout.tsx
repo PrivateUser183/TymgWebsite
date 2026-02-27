@@ -62,7 +62,7 @@ const HeroUserClient = dynamic(
           description: "text-xs text-blue-500",
         }}
         avatarProps={{
-          src: "https://images.unsplash.com/broken",
+          src: staticProfileImage,
           size: "lg",
         }}
         description={""}
