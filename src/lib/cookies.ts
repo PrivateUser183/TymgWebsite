@@ -51,7 +51,10 @@ export function getCookie<T>(name: string): T | null {
   const cookies = document.cookie
     .split(";")
     .reduce((acc: { [key: string]: string }, cookie: string) => {
-      const [key, value] = cookie.trim().split("=");
+      const idx = cookie.indexOf("=");
+      if (idx === -1) return acc;
+      const key = cookie.substring(0, idx).trim();
+      const value = cookie.substring(idx + 1).trim();
       acc[key] = value;
       return acc;
     }, {});

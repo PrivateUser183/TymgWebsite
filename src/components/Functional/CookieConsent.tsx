@@ -1,13 +1,14 @@
 import { Button } from "@heroui/react";
 import React, { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
+import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
 
 const COOKIE_KEY = "cookie_consent_choice";
 
 const CookieConsent = () => {
   const [showModal, setShowModal] = useState(false);
-  const pathname = usePathname();
+  const router = useRouter();
+  const pathname = router.pathname;
   const { t } = useTranslation();
 
   useEffect(() => {

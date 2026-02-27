@@ -3,7 +3,7 @@ import { HeroUIProvider } from "@heroui/system";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import ReduxProvider from "@/lib/redux/ReduxProvider";
 import DefaultLayout from "@/layouts/default";
 import { NextPageWithLayout } from "@/types";
@@ -11,6 +11,41 @@ import { fontSans, fontMono } from "@/config/fonts";
 import { trackPageView } from "@/lib/analytics";
 import "@/styles/index.css";
 import { CircleX } from "lucide-react";
+
+class ErrorBoundary extends React.Component<
+  { children: React.ReactNode },
+  { hasError: boolean }
+> {
+  constructor(props: { children: React.ReactNode }) {
+    super(props);
+    this.state = { hasError: false };
+  }
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+  componentDidCatch(error: Error, info: React.ErrorInfo) {
+    console.error("App error boundary caught:", error, info);
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div style={{ padding: "2rem", textAlign: "center" }}>
+          <h2>Something went wrong.</h2>
+          <button
+            onClick={() => {
+              this.setState({ hasError: false });
+              window.location.reload();
+            }}
+            style={{ marginTop: "1rem", padding: "0.5rem 1rem", cursor: "pointer" }}
+          >
+            Reload Page
+          </button>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
 
 const ToastProvider = dynamic(
   () => import("@heroui/react").then((mod) => mod.ToastProvider),
@@ -58,33 +93,35 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
     ));
 
   return (
-    <HeroUIProvider navigate={router.push}>
-      <NextThemesProvider
-        defaultTheme="system"
-        attribute="class"
-        disableTransitionOnChange
-      >
-        <ProgressBar />
-        <ToastProvider
-          placement="top-right"
-          toastOffset={10}
-          toastProps={{
-            classNames: {
-              base: "pr-6",
-            },
-            timeout: 4000,
-            closeIcon: (
-              <CircleX
-                size={34}
-                strokeWidth={2.5}
-                className="text-foreground/25"
-              />
-            ),
-          }}
-        />
-        <ReduxProvider>{getLayout(<Component {...pageProps} />)}</ReduxProvider>
-      </NextThemesProvider>
-    </HeroUIProvider>
+    <ErrorBoundary>
+      <HeroUIProvider navigate={router.push}>
+        <NextThemesProvider
+          defaultTheme="system"
+          attribute="class"
+          disableTransitionOnChange
+        >
+          <ProgressBar />
+          <ToastProvider
+            placement="top-right"
+            toastOffset={10}
+            toastProps={{
+              classNames: {
+                base: "pr-6",
+              },
+              timeout: 4000,
+              closeIcon: (
+                <CircleX
+                  size={34}
+                  strokeWidth={2.5}
+                  className="text-foreground/25"
+                />
+              ),
+            }}
+          />
+          <ReduxProvider>{getLayout(<Component {...pageProps} />)}</ReduxProvider>
+        </NextThemesProvider>
+      </HeroUIProvider>
+    </ErrorBoundary>
   );
 }
 
