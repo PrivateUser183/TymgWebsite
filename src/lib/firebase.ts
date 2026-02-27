@@ -77,6 +77,12 @@ export function initializeFirebase(
 
     try {
       auth = getAuth(firebaseApp);
+      // Disable app verification for testing in development - must be set
+      // immediately after getAuth() and before any signInWithPhoneNumber call
+      if (process.env.NODE_ENV === "development") {
+        (self as any).FIREBASE_APPCHECK_DEBUG_TOKEN = true;
+        auth.settings.appVerificationDisabledForTesting = true;
+      }
       googleProvider = new GoogleAuthProvider();
       appleProvider = new OAuthProvider("apple.com");
     } catch (authError) {

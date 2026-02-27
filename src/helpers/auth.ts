@@ -339,9 +339,9 @@ export const handleSignUp = async (
       color: "success",
     });
     return true;
-  } catch (error) {
+  } catch (error: any) {
+    console.error("Sign-up error:", error?.code, error?.message, error);
     const errorMsg = getFirebaseErrorMessage(error as FirebaseError);
-    console.error("Sign-up error:", errorMsg);
     addToast({
       title: i18n.t("signup_toast.signup_error_title"),
       description: errorMsg,
