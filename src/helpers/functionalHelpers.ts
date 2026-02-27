@@ -22,7 +22,7 @@ import {
   setCartLoading,
   setError,
 } from "@/lib/redux/slices/cartSlice";
-import { fallbackApiRes } from "@/config/constants";
+import { fallbackApiRes, staticLat, staticLng } from "@/config/constants";
 import i18n from "../../i18n";
 import { isValidUrl } from "./validator";
 import {
@@ -102,7 +102,7 @@ export const isAxiosError = (
 
 export const getUserLocationFromContext = async (
   context: GetServerSidePropsContext
-): Promise<{ lat: string; lng: string } | null> => {
+): Promise<{ lat: string; lng: string }> => {
   try {
     const raw = context.req.cookies.userLocation;
     if (raw) {
@@ -112,13 +112,15 @@ export const getUserLocationFromContext = async (
       } catch {
         parsedLocation = JSON.parse(raw);
       }
-      return parsedLocation;
+      if (parsedLocation?.lat && parsedLocation?.lng) {
+        return parsedLocation;
+      }
     }
-    return null;
   } catch (error) {
     console.error("Error getting user Location from context:", error);
-    return null;
   }
+  // Fallback to default location so SSR always has coordinates
+  return { lat: String(staticLat), lng: String(staticLng) };
 };
 
 export const handleAddToCart = async (params: {
