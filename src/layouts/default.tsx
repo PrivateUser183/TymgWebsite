@@ -40,14 +40,15 @@ export default function DefaultLayout({
   initialSettings?: Settings | null;
 }) {
   const [isOnline, setIsOnline] = useState<boolean>(true);
-  const [hasMounted, setHasMounted] = useState(false);
   const [maintenanceState, setMaintenanceState] = useState(
     maintenanceStore.getState()
   );
 
   useEffect(() => {
-    setHasMounted(true);
-    setIsOnline(navigator.onLine);
+    const updateOnlineStatus = () => setIsOnline(navigator.onLine);
+
+    // Check on next frame to avoid sync setState in effect
+    const id = requestAnimationFrame(updateOnlineStatus);
 
     const handleOnline = () => setIsOnline(true);
     const handleOffline = () => setIsOnline(false);
@@ -56,6 +57,7 @@ export default function DefaultLayout({
     window.addEventListener("offline", handleOffline);
 
     return () => {
+      cancelAnimationFrame(id);
       window.removeEventListener("online", handleOnline);
       window.removeEventListener("offline", handleOffline);
     };
@@ -128,7 +130,7 @@ export default function DefaultLayout({
 
   return (
     <div className="flex flex-col min-h-screen w-full items-center" suppressHydrationWarning>
-      {hasMounted && !isOnline ? (
+      {!isOnline ? (
         <OfflinePage />
       ) : isLoading && !isSSR() ? (
         <div className="relative h-screen w-full flex flex-col justify-center items-center overflow-hidden bg-white">
