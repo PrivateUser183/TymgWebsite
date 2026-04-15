@@ -2,7 +2,7 @@ import React, { useState, useCallback, useEffect, useMemo } from "react";
 import { Minus, Plus } from "lucide-react";
 import { debounce } from "lodash";
 import { CartItem } from "@/types/ApiResponse";
-import { updateCartItemQuantity } from "@/routes/api";
+import { updateCartItemQuantity, removeItemFromCart } from "@/routes/api";
 import { updateCartData } from "@/helpers/updators";
 import { addToast } from "@heroui/react";
 import { useDispatch, useSelector } from "react-redux";
@@ -72,16 +72,41 @@ const CartQuantityControl: React.FC<CartQuantityControlProps> = ({
     [item, debounceDelay, dispatch, t]
   );
 
+  const handleRemoveItem = useCallback(async () => {
+    setIsUpdating(true);
+    dispatch(setCartLoading(true));
+    try {
+      const response = await removeItemFromCart(item.id);
+      if (response.success) {
+        addToast({
+          title: t("cart_updated_title"),
+          description: t("cartItems.itemRemoved.description"),
+          color: "success",
+        });
+      } else {
+        addToast({
+          title: t("update_failed_title"),
+          description: response.message || t("update_failed_description"),
+          color: "danger",
+        });
+      }
+    } catch (error) {
+      console.error(error);
+      addToast({
+        title: t("network_error_title"),
+        description: t("network_error_description"),
+        color: "danger",
+      });
+    } finally {
+      setIsUpdating(false);
+      updateCartData(true, true);
+    }
+  }, [item.id, dispatch, t]);
+
   const handleQuantityChange = useCallback(
     (newQuantity: number) => {
       if (newQuantity < minQuantity) {
-        addToast({
-          title: t("min_quantity_error_title"),
-          description: t("min_quantity_error_description", {
-            min: minQuantity,
-          }),
-          color: "danger",
-        });
+        handleRemoveItem();
         return;
       }
 
@@ -124,6 +149,7 @@ const CartQuantityControl: React.FC<CartQuantityControlProps> = ({
       stock,
       quantityStep,
       debouncedUpdateQuantity,
+      handleRemoveItem,
       t,
     ]
   );
