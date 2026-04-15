@@ -12,6 +12,44 @@ import { trackPageView } from "@/lib/analytics";
 import "@/styles/index.css";
 import { CircleX } from "lucide-react";
 
+// Fix for Chrome/browser translation breaking React hydration (insertBefore error).
+// Browser extensions and translators inject <font> tags that modify the DOM tree,
+// causing React's reconciler to crash when it tries to insertBefore a removed node.
+if (typeof window !== "undefined") {
+  const origRemoveChild = Node.prototype.removeChild;
+  Node.prototype.removeChild = function <T extends Node>(child: T): T {
+    if (child.parentNode !== this) {
+      if (console?.warn) {
+        console.warn(
+          "Cannot remove child: not a child of this node",
+          child,
+          this
+        );
+      }
+      return child;
+    }
+    return origRemoveChild.call(this, child) as T;
+  };
+
+  const origInsertBefore = Node.prototype.insertBefore;
+  Node.prototype.insertBefore = function <T extends Node>(
+    newNode: T,
+    refNode: Node | null
+  ): T {
+    if (refNode && refNode.parentNode !== this) {
+      if (console?.warn) {
+        console.warn(
+          "Cannot insert before: ref node is not a child of this node",
+          refNode,
+          this
+        );
+      }
+      return newNode;
+    }
+    return origInsertBefore.call(this, newNode, refNode) as T;
+  };
+}
+
 class ErrorBoundary extends React.Component<
   { children: React.ReactNode },
   { hasError: boolean }
