@@ -44,12 +44,13 @@ export const SEOHead = ({ settings }: HeadProps) => {
       <meta name="author" content={webSettings.supportEmail} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="robots" content="index, follow" />
-      <meta property="og:title" content={webSettings.siteName} />
+      <meta key="og:title" property="og:title" content={webSettings.siteName} />
       <meta
+        key="og:description"
         property="og:description"
         content={webSettings.metaDescription || "Default meta description"}
       />
-      <meta property="og:image" content={webSettings.siteHeaderLogo} />
+      <meta key="og:image" property="og:image" content={webSettings.siteHeaderLogo} />
       <meta
         property="og:url"
         content={typeof window !== "undefined" ? window.location.href : ""}

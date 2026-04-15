@@ -137,10 +137,10 @@ const DynamicSEO: React.FC<SEOProps> = ({
       )}
 
       {/* Open Graph / Facebook */}
-      <meta property="og:type" content={ogType} />
-      <meta property="og:title" content={finalOgTitle} />
-      <meta property="og:description" content={finalOgDescription} />
-      {finalOgImage && <meta property="og:image" content={finalOgImage} />}
+      <meta key="og:type" property="og:type" content={ogType} />
+      <meta key="og:title" property="og:title" content={finalOgTitle} />
+      <meta key="og:description" property="og:description" content={finalOgDescription} />
+      {finalOgImage && <meta key="og:image" property="og:image" content={finalOgImage} />}
       {ogImageAlt && <meta property="og:image:alt" content={ogImageAlt} />}
       {finalOgUrl && <meta property="og:url" content={finalOgUrl} />}
       <meta property="og:site_name" content={finalOgSiteName} />
