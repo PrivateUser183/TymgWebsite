@@ -1,0 +1,1791 @@
+{
+  "about_us": "À propos de nous",
+  "addToBucket": "Ajouter au panier",
+  "add_photos": "Ajouter des photos",
+  "address": {
+    "addNew": "Ajouter",
+    "chooseAddress": "Choisir l'adresse",
+    "chooseLocation": "Choisissez votre lieu de livraison",
+    "delete_confirm_description": "Êtes-vous sûr de vouloir supprimer cette adresse?",
+    "delete_confirm_title": "Supprimer l'adresse",
+    "delete_failed_description": "Impossible de supprimer l'adresse. Veuillez réessayer.",
+    "delete_failed_title": "Échec de la suppression",
+    "deleted_description": "L'adresse a été supprimée avec succès.",
+    "deleted_title": "Adresse supprimée",
+    "deliveryAddress": "Adresse de livraison",
+    "labels": {
+      "addressLine1": "Ligne d'adresse 1",
+      "addressLine2": "Ligne d'adresse 2",
+      "addressType": "Type d'adresse",
+      "city": "Ville",
+      "defaultAddress": "Définir par défaut",
+      "landmark": "Point de repère",
+      "location": "Sélectionner l'emplacement",
+      "mobile": "Numéro de cellulaire",
+      "state": "Province",
+      "zipcode": "Code postal"
+    },
+    "loading": "Chargement...",
+    "noAddresses": "Aucune adresse disponible",
+    "noSelected": "Aucune adresse sélectionnée",
+    "pleaseAddFirst": "Veuillez d'abord ajouter une adresse",
+    "selectAddress": "Sélectionner l'adresse",
+    "toast": {
+      "addSuccess": "Adresse ajoutée avec succès",
+      "error": "Une erreur est survenue",
+      "save_failed": "Échec de la sauvegarde !",
+      "toast": {
+        "error": "erreur"
+      },
+      "updateSuccess": "Adresse mise à jour avec succès"
+    },
+    "unexpected_error_description": "Une erreur inattendue est survenue. Veuillez réessayer plus tard.",
+    "unexpected_error_title": "Erreur inattendue",
+    "update": "Mettre à jour l'adresse"
+  },
+  "addressSelection": {
+    "current": "Actuelle",
+    "empty": {
+      "button": "Ajouter votre première adresse",
+      "failed": "Échec du chargement des adresses. Veuillez réessayer.",
+      "noAddresses": "Aucune adresse trouvée. Ajoutez votre première adresse pour continuer."
+    },
+    "footer": {
+      "alreadySelected": "Déjà sélectionnée",
+      "confirm": "Confirmer la sélection"
+    },
+    "header": {
+      "subtitle": {
+        "empty": "Aucune adresse enregistrée",
+        "withAddresses": "Choisissez parmi {{count}} adresse(s) enregistrée(s){{plural}}"
+      },
+      "title": "Sélectionner l'adresse de livraison"
+    },
+    "loading": {
+      "message": "Chargement de toutes les adresses..."
+    }
+  },
+  "address_not_available": "Adresse non disponible",
+  "all_products": "Tous les produits",
+  "all_statuses": "Tous les statuts",
+  "all_types": "Tous les types",
+  "already_in_list": "Déjà dans la liste",
+  "amount": "Montant",
+  "amount_max_limit": "Le montant ne peut pas dépasser 1 000 000 $",
+  "amount_positive_number": "Le montant doit être un nombre positif",
+  "apply": "Appliquer",
+  "aria": {
+    "close_menu": "Fermer le menu",
+    "open_menu": "Ouvrir le menu"
+  },
+  "available_options": "Options disponibles :",
+  "available_promo_codes": "Codes promo disponibles",
+  "bad": "Mauvais",
+  "brand": {
+    "accordionLabel": "Marques en accordéon",
+    "loading": "Chargement des marques...",
+    "noBrands": "Aucune marque trouvée",
+    "scrollMore": "Défiler pour en voir plus",
+    "selectionAria": "Sélection de marque",
+    "subtitle": "Cliquez pour sélectionner",
+    "title": "Marques"
+  },
+  "browse_category": "Parcourir la catégorie",
+  "buyNow": "Acheter maintenant",
+  "by": "par",
+  "cancel": "Annuler",
+  "cartStepper": {
+    "review": "Révision",
+    "payment": "Paiement",
+    "orderPlaced": "Commande passée"
+  },
+  "cancel_item_failed_msg": "Nous n'avons pas pu annuler l'article sélectionné. Veuillez réessayer.",
+  "cancel_item_failed_title": "Échec de l'annulation",
+  "cancel_item_success_msg": "L'article sélectionné a été annulé avec succès.",
+  "cancel_item_success_title": "Article annulé",
+  "cancel_items": "Annuler les articles de la commande",
+  "cancel_items_desc": "Sélectionnez un article ci-dessous pour l'annuler de votre commande.",
+  "cart": {
+    "add_failed": "Échec de l'ajout au panier",
+    "add_failed_description": "Impossible d'ajouter l'article au panier",
+    "add_failed_title": "Échec de l'ajout au panier",
+    "add_success": "Article ajouté au panier avec succès",
+    "backToHome": "Retour à l'accueil",
+    "browseCategories": "Parcourir les catégories",
+    "cancellationPolicy": {
+      "description": "Connaissez vos droits",
+      "freeCancellation": "Annulation gratuite dans les 2 minutes suivant la commande",
+      "noRefund": "Aucun remboursement si un partenaire de livraison est assigné",
+      "partialRefund": "Remboursement partiel si annulé après le début de la préparation",
+      "title": "Politique d'annulation"
+    },
+    "cartEmptyDescription": "Vous n'avez encore rien ajouté. Commencez à explorer nos produits maintenant.",
+    "cartEmptyTitle": "Votre panier est vide",
+    "continueShopping": "Continuer vos achats",
+    "deliveryInstructions": {
+      "description": "Instructions spéciales pour la livraison",
+      "placeholder": "ex. Sonnez à la porte, Laissez à la porte, Appelez avant la livraison...",
+      "title": "Instructions de livraison"
+    },
+    "error_description": "Une erreur est survenue lors de l'ajout au panier",
+    "error_message": "Une erreur est survenue lors de l'ajout au panier",
+    "error_title": "Erreur",
+    "fetch_failed": "Échec de la récupération du panier mis à jour",
+    "fetch_failed_description": "Impossible de mettre à jour le panier après l'ajout de l'article",
+    "fetch_failed_title": "Échec de la récupération du panier",
+    "login_required": "Veuillez vous connecter pour continuer",
+    "selectAddressToCheckRushDelivery": "Sélectionnez une adresse pour voir si la livraison express est disponible",
+    "sync_success_title": "Panier synchronisé",
+    "sync_success_desc": "Les articles de votre panier ont été synchronisés avec succès",
+    "sync_error_title": "Échec de la synchronisation",
+    "sync_error_desc": "Une erreur est survenue lors de la synchronisation de votre panier"
+  },
+  "cartItems": {
+    "from": "de",
+    "itemRemoved": {
+      "description": "L'article a été retiré de votre panier avec succès.",
+      "title": "Article retiré"
+    },
+    "networkError": {
+      "description": "Une erreur est survenue lors du retrait de l'article.",
+      "title": "Erreur réseau"
+    },
+    "removeFailed": {
+      "description": "Impossible de retirer l'article du panier.",
+      "title": "Échec du retrait"
+    },
+    "removeItemModal": {
+      "alertDescription": "Cette action est irréversible.",
+      "alertTitle": "Avertissement",
+      "cancelText": "Annuler",
+      "confirmText": "Retirer",
+      "description": "Êtes-vous sûr de vouloir retirer cet article de votre panier?",
+      "title": "Retirer l'article"
+    }
+  },
+  "cart_title": "Panier",
+  "cart_updated_description": "Votre panier a été mis à jour avec succès.",
+  "cart_updated_title": "Panier mis à jour",
+  "categories": "Catégories",
+  "category": {
+    "accordionLabel": "Catégories en accordéon",
+    "loading": "Chargement des catégories...",
+    "noCategories": "Aucune catégorie trouvée",
+    "scrollMore": "Défiler pour en voir plus",
+    "subtitle": "Cliquez pour sélectionner",
+    "title": "Catégories"
+  },
+  "check_back_later": "Revenez plus tard pour de nouvelles offres excitantes!",
+  "checkout": {
+    "cartCleared": {
+      "description": "Votre panier a été vidé avec succès",
+      "title": "Panier vidé"
+    },
+    "clearCart": "Vider le panier",
+    "clearCartModal": {
+      "alertDescription": "Cette action est irréversible.",
+      "alertTitle": "Avertissement",
+      "cancelText": "Annuler",
+      "confirmText": "Vider le panier",
+      "description": "Êtes-vous sûr de vouloir vider tous les articles de votre panier?",
+      "title": "Vider le panier"
+    },
+    "closedStores": {
+      "description": "Vous ne pouvez pas passer à la caisse avec des articles de magasins fermés : {{stores}}. Veuillez les retirer avant de continuer.",
+      "title": "Certains magasins sont fermés"
+    },
+    "deliveryCharges": "Frais de livraison",
+    "freeShipping": "Livraison gratuite",
+    "distanceCharges": "Frais de distance",
+    "dropOffFee": "Frais de dépôt",
+    "error_console": "Erreur lors de la création de la commande!",
+    "error_title": "Erreur lors de la passation de la commande!",
+    "estimatedDelivery": "Livraison estimée",
+    "handlingCharges": "Frais de manutention",
+    "itemsTotal": "Total des articles",
+    "noAddressSelected": {
+      "description": "Veuillez sélectionner une adresse de livraison pour continuer",
+      "title": "Aucune adresse sélectionnée"
+    },
+    "no_address": "Aucune adresse sélectionnée pour le paiement.",
+    "proceedToCheckout": "Passer à la caisse",
+    "promo": "Promo",
+    "rushDelivery": "Livraison express",
+    "rushDeliveryDescription": "Service express",
+    "selectAddressToCheckRushDelivery": "Sélectionnez une adresse pour voir si la livraison express est disponible",
+    "selectAddressToEnableRush": "Sélectionnez une adresse pour activer la livraison express",
+    "stores": "Magasins",
+    "success": "Commande passée avec succès!",
+    "totalAmount": "Montant total",
+    "useWalletBalance": "Utiliser le solde du portefeuille",
+    "walletAmountUsed": "Montant du portefeuille à utiliser",
+    "yourOrder": "Votre commande",
+    "flutterwave_link_invalid": "Lien de paiement invalide",
+    "flutterwave_link_error_message": "Le lien de paiement Flutterwave est manquant ou invalide. Veuillez réessayer.",
+    "cashbackReward": "Vous recevrez ceci en remise en argent",
+    "remainingWalletBalance": "Solde restant du portefeuille",
+    "payWithWallet": "Payer avec le portefeuille",
+    "allPricesIncludeTaxes": "Tous les prix incluent les taxes",
+    "failed": {
+      "title": "Échec du paiement",
+      "description": "Impossible de traiter votre paiement. Veuillez réessayer."
+    },
+    "validation": {
+      "multipleStores": "Veuillez diviser votre commande. Nous ne pouvons traiter que les articles d'un seul magasin à la fois.",
+      "maxItemsExceeded": "Limite atteinte ({{maxItems}} articles). Veuillez retirer {{currentItems}} articles pour continuer.",
+      "minCartAmount": "Ajoutez {{currencySymbol}}{{remainingAmount}} de plus pour atteindre le minimum de {{currencySymbol}}{{minAmount}} au paiement.",
+      "title": "Impossible de passer à la caisse"
+    }
+  },
+  "general": {
+    "error": {
+      "title": "Une erreur est survenue",
+      "somethingWentWrong": "Une erreur inattendue est survenue. Veuillez réessayer plus tard."
+    }
+  },
+  "choices": "{{count}} Choix",
+  "choose_active_offers": "Choisissez parmi {{count}} offres actives pour économiser davantage!",
+  "clear_all": "Tout effacer",
+  "clear_search": "Effacer la recherche",
+  "close": "Fermer",
+  "compareWithOthers": "Comparer avec d'autres",
+  "completed": "Terminée",
+  "confirm_cancel_item": "Confirmer l'annulation de l'article",
+  "confirm_cancel_item_desc": "Êtes-vous sûr de vouloir annuler cet article? Cette action est irréversible.",
+  "connecting": "Connexion...",
+  "contactSupport": "Contacter le soutien",
+  "continue": "Continuer",
+  "continue_with_google": "Continuer avec Google",
+  "continue_with_apple": "Continuer avec Apple",
+  "copy_to_clipboard": "Copier dans le presse-papiers",
+  "create": "Créer",
+  "created": "Créé",
+  "creating": "Création...",
+  "currency": "Devise",
+  "date": "Date",
+  "decrease_quantity": "Diminuer la quantité",
+  "delete": "Supprimer",
+  "demo_mode_message": "Actuellement en mode démo",
+  "delivering_to": "Livraison à",
+  "delivering_to_your_location": "Livraison à votre emplacement",
+  "delivery": "Livraison",
+  "deliveryCharge": "Frais de livraison",
+  "deliveryFee": "Frais de livraison :",
+  "deliveryPartner": "Partenaire de livraison",
+  "deliveryReview": "Évaluation de la livraison",
+  "delivery_info": "Info livraison",
+  "delivery_location": "Lieu de livraison",
+  "delivery_partner": "Partenaire de livraison",
+  "deposit": {
+    "buttonTitle": "Déposer",
+    "error": {
+      "descInvalid": "Les détails ne peuvent contenir que des lettres, des chiffres et de la ponctuation de base",
+      "descMax": "Les détails ne peuvent pas dépasser 500 caractères",
+      "descMin": "Les détails doivent contenir au moins 5 caractères",
+      "exceed": "Le montant ne peut pas dépasser 1 000 000 $",
+      "invalid": "Le montant doit être un nombre positif",
+      "message": "Échec de l'ajout du solde",
+      "positive": "Veuillez entrer un nombre entier positif",
+      "title": "Erreur"
+    },
+    "input": {
+      "amount": {
+        "label": "Montant",
+        "placeholder": "Entrez le montant du dépôt"
+      },
+      "description": {
+        "label": "Description",
+        "placeholder": "Ajoutez une description supplémentaire à propos de ce dépôt (au moins 5 caractères si fourni)"
+      }
+    },
+    "modalTitle": "Déposer des fonds",
+    "processingPayment": "Traitement du paiement",
+    "submitButton": "Ajouter le dépôt",
+    "success": {
+      "message": "Solde ajouté avec succès",
+      "title": "Succès"
+    },
+    "unexpected": {
+      "message": "Une erreur est survenue. Veuillez réessayer.",
+      "title": "Erreur inattendue"
+    }
+  },
+  "deposit_error": {
+    "positive": "positif"
+  },
+  "deposit_title": "Dépôt",
+  "description": "Description",
+  "description_invalid_characters": "Les détails ne peuvent contenir que des lettres, des chiffres et de la ponctuation de base",
+  "description_max_500": "Les détails ne peuvent pas dépasser 500 caractères",
+  "description_min_5": "Les détails doivent contenir au moins 5 caractères",
+  "description_placeholder": "Raison du retrait (min. 5 caractères)",
+  "details": "Détails",
+  "discount": "{{percent}}% de rabais",
+  "edit": "Modifier",
+  "edit_review": "Modifier l'avis",
+  "email_check": {
+    "check_error": "Erreur lors de la vérification de la disponibilité du courriel",
+    "email_exists": "Un compte avec ce courriel existe déjà",
+    "invalid_email": "Veuillez entrer une adresse courriel valide"
+  },
+  "end_reached": "Vous avez atteint la fin! Tous les {{total}} {{entityType}} ont été chargés.",
+  "enter_min_2_chars": "Veuillez entrer au moins 2 caractères pour rechercher",
+  "enter_positive_integer": "Veuillez entrer un nombre entier positif",
+  "enter_withdraw_amount": "Entrez le montant du retrait",
+  "error": "Erreur",
+  "error_loading_promo_codes": "Erreur lors du chargement des codes promo",
+  "estimatedDelivery": "Livraison est.",
+  "estimatedDeliveryTime": "Temps de livraison estimé",
+  "excellent": "Excellent",
+  "expired": "Expiré",
+  "express_rushDelivery": "Livraison express",
+  "express_rushDeliveryDescription": "Recevez votre commande plus rapidement avec un traitement prioritaire",
+  "failed": "Échoué",
+  "failed_to_update_location": "Échec de la mise à jour de l'emplacement",
+  "faqs": "FAQ",
+  "fetching_delivery_partner_info": "Récupération des informations du partenaire de livraison...",
+  "file_too_large": "Fichier trop volumineux",
+  "footer": {
+    "bottom_bar": {
+      "powered_by": "Propulsé par"
+    },
+    "company_info": {
+      "quality": "Qualité",
+      "secure": "Sécurisé",
+      "secure_payments": "Paiements 100% sécurisés",
+      "trusted": "Fiable",
+      "trusted_customers": "Approuvé par des milliers de clients",
+      "wide_range": "Large gamme de produits de qualité"
+    },
+    "contact_info": {
+      "call_us": "Appelez-nous",
+      "email_us": "Écrivez-nous",
+      "header": "Contactez-nous"
+    },
+    "policies": {
+      "header": "Politiques",
+      "privacy_policy": "Politique de confidentialité",
+      "return_refund_policy": "Politique de retour et remboursement",
+      "shipping_policy": "Politique de livraison",
+      "terms_conditions": "Conditions générales"
+    },
+    "quick_links": {
+      "about_us": "À propos de nous",
+      "delivery_zones": "Zones de livraison",
+      "faqs": "FAQ",
+      "header": "Liens rapides",
+      "order_now": "Commander maintenant",
+      "stores": "Magasins",
+      "become_seller": "Devenir vendeur"
+    },
+    "social": {
+      "follow_us": "Suivez-nous"
+    }
+  },
+  "found": "trouvé",
+  "freeAbove": "Gratuit au-dessus de :",
+  "fulfillmentType": "Type d'exécution",
+  "giftCard": "Carte-cadeau",
+  "good": "Bon",
+  "great_experience": "Excellente expérience",
+  "guarantee": "Garantie",
+  "home": {
+    "brands": {
+      "description": "Approuvé par des millions",
+      "title": "Marques vedettes"
+    },
+    "categories": {
+      "description": "Explorez un large éventail de catégories",
+      "title": "Magasiner par catégorie"
+    },
+    "delivery": {
+      "button": "Commander maintenant",
+      "features": {
+        "contact_free": "Livraison sans contact",
+        "packaging": "Emballage sécurisé",
+        "tracking": "Suivi en temps réel"
+      },
+      "header": "Rapide et fiable",
+      "highlight": "Livraison",
+      "subtitle": "Expédition sûre, sécurisée et ponctuelle pour chaque commande",
+      "title": "Rapide et fiable"
+    },
+    "products": {
+      "description": "Offres fraîches sélectionnées pour vous",
+      "title": "Magasiner les produits"
+    },
+    "recently_viewed": {
+      "description": "Continuez où vous en étiez",
+      "title": "Vus récemment"
+    },
+    "stores": {
+      "description": "Explorez les vendeurs locaux de confiance près de chez vous",
+      "title": "Parcourir les magasins"
+    }
+  },
+  "home_title": "Accueil",
+  "how_would_you_rate": "Comment évalueriez-vous ce(tte) {{type}}? *",
+  "image_limit_exceeded": "Limite d'images dépassée",
+  "image_size_limit_5mb": "Chaque image doit faire moins de 5 Mo",
+  "images": "images",
+  "inclusiveTax": "( Toutes taxes incluses )",
+  "increase_quantity": "Augmenter la quantité",
+  "invalid_file_type": "Type de fichier invalide",
+  "invoice": "Facture",
+  "item": "article",
+  "item_not_found": "Article introuvable",
+  "items": "articles",
+  "itemsCount": "Articles ({{count}})",
+  "its_okay": "C'est correct",
+  "keep_typing": "Continuez à taper...",
+  "last_updated": "Dernière mise à jour",
+  "list": "liste",
+  "lists": "listes",
+  "load_more": "Charger plus",
+  "loading": "Chargement...",
+  "loading_available_offers": "Chargement des offres disponibles...",
+  "loading_promo_codes": "Chargement des codes promo...",
+  "locationSelector": {
+    "cannotConfirm": "Impossible de confirmer l'emplacement",
+    "checking": "Vérification...",
+    "confirmLocation": "Confirmer l'emplacement",
+    "deliveryAvailable": "Livraison disponible",
+    "deliveryNotAvailable": "Livraison non disponible",
+    "deliveryNotAvailableDescription": "Vous pouvez continuer à naviguer ou sélectionner un autre emplacement",
+    "errorChecking": "Erreur lors de la vérification de la zone de livraison",
+    "errorConfirming": "Erreur lors de la confirmation de l'emplacement",
+    "errorProcessing": "Erreur lors du traitement de l'emplacement",
+    "getting": "Obtention...",
+    "modalTitle": "Sélecteur d'emplacement",
+    "pleaseConfirm": "Veuillez confirmer l'emplacement pour continuer !",
+    "selectLocation": "Sélectionner l'emplacement"
+  },
+  "login_modal": {
+    "aria": {
+      "hide_password": "Masquer le mot de passe",
+      "show_password": "Afficher le mot de passe"
+    },
+    "button": "Connexion",
+    "create_account": "Créer un compte",
+    "email_label": "Adresse courriel",
+    "email_placeholder": "Entrez votre courriel",
+    "errors": {
+      "email_not_registered": "Ce courriel n'est pas encore enregistré!",
+      "email_verify_failed": "Impossible de vérifier le courriel. Veuillez réessayer.",
+      "mobile_not_registered": "Ce numéro de cellulaire n'est pas enregistré"
+    },
+    "forgot_password": "Mot de passe oublié?",
+    "login_failed_toast": "Courriel ou mot de passe invalide. Veuillez réessayer.",
+    "login_success_toast": "Connexion réussie!",
+    "no_account": "Vous n'avez pas de compte?",
+    "or": "OU",
+    "password_label": "Mot de passe",
+    "password_placeholder": "Entrez votre mot de passe",
+    "remember_me": "Se souvenir de moi",
+    "sign_in": "Se connecter",
+    "welcome_subtitle": "Connectez-vous à votre compte pour continuer",
+    "welcome_title": "Bon retour",
+    "email_tab": "Courriel",
+    "mobile_tab": "Cellulaire",
+    "mobile_placeholder": "Entrez un numéro de cellulaire à 10 chiffres",
+    "mobile_label": "Numéro de cellulaire"
+  },
+  "logout_alert_description": "Vous devrez vous reconnecter pour reprendre où vous en étiez.",
+  "logout_alert_title": "Vous êtes sur le point de vous déconnecter",
+  "logout_confirm": "Se déconnecter",
+  "logout_subtitle": "Confirmez votre déconnexion",
+  "logout_title": "Déconnexion",
+  "logout_toast": {
+    "success_desc": "Vous avez été déconnecté avec succès",
+    "success_title": "Déconnexion réussie"
+  },
+  "maintenance": {
+    "estimatedTimeDescription": "Nous prévoyons être de retour dans quelques instants",
+    "estimatedTimeTitle": "Temps estimé",
+    "footerMessage": "Merci de votre patience! 🙏",
+    "heading": "Nous serons de retour bientôt!",
+    "metaDescription": "Le site Web est présentement en maintenance. Nous serons de retour bientôt!",
+    "pageTitle": "Site en maintenance",
+    "subheading": "Notre site Web est présentement en maintenance planifiée pour mieux vous servir. Nous serons de retour en ligne sous peu!",
+    "workDescription": "Mise à niveau de nos systèmes pour de meilleures performances",
+    "workTitle": "Ce que nous faisons"
+  },
+  "maxSave": "Économie max",
+  "max_5_images_5mb_each": "Maximum 5 images, 5 Mo chacune",
+  "max_quantity_error_description": "Vous pouvez commander jusqu'à {{max}} article(s) seulement.",
+  "max_quantity_error_title": "Quantité maximale dépassée",
+  "maximum_5_images_allowed": "Maximum 5 images permises",
+  "minOrder": "Commande min",
+  "minStep": "Min : {{min}}{{stepText}}",
+  "min_quantity_error_description": "Vous devez commander au moins {{min}} article(s).",
+  "min_quantity_error_title": "Quantité minimale atteinte",
+  "mins": "Min",
+  "more_options": "+{{count}} options de plus",
+  "move_button": "Déplacer",
+  "move_error": "Une erreur est survenue lors du déplacement de l'article",
+  "move_failed": "Échec du déplacement de l'article",
+  "myOrders": "Mes commandes",
+  "na": "N/D",
+  "nav": {
+    "about_us": "À propos de nous",
+    "brands": "Marques",
+    "contact_us": "Contactez-nous",
+    "faqs": "FAQ",
+    "home": "Accueil",
+    "products": "Produits"
+  },
+  "network_error": "Erreur réseau",
+  "network_error_description": "Une erreur est survenue lors de la soumission de votre avis. Veuillez réessayer plus tard.",
+  "network_error_title": "Erreur réseau",
+  "no": "Non",
+  "noSellerReview": "Aucun avis donné par ce vendeur",
+  "no_active_promo_codes": "Aucun code promo actif",
+  "no_items": "Aucun article trouvé dans cette commande.",
+  "no_products_available": "Aucun produit n'est présentement disponible à votre emplacement.",
+  "no_products_found": "Aucun produit trouvé",
+  "no_products_found_message": "Nous n'avons trouvé aucun produit correspondant à « {{query}} »",
+  "no_transactions_found": "Aucune transaction trouvée",
+  "notAvailable": "Non disponible",
+  "offline": {
+    "connection_lost": "Connexion perdue",
+    "description": "Veuillez vérifier votre connexion Internet et réessayer. Assurez-vous d'être connecté à un réseau.",
+    "help_text": "Si le problème persiste, vérifiez vos paramètres réseau ou contactez votre administrateur réseau.",
+    "no_internet": "Aucune connexion Internet",
+    "retrying": "Nouvelle tentative...",
+    "try_again": "Réessayer"
+  },
+  "on_the_way": "En route",
+  "online": "En ligne",
+  "only_images_allowed": "Seules les images sont acceptées",
+  "opens_at": "Ouvre à {{time}}",
+  "optional": "Facultatif",
+  "order": "Commande",
+  "orderId": "Commande : {{id}}",
+  "orderItems": "Articles de la commande",
+  "orderNote": "Note de commande",
+  "orderSummary": "Résumé de la commande",
+  "order_destination": "Destination de la commande",
+  "order_id": "No de commande",
+  "orders_empty_button": "Commencer à magasiner",
+  "orders_empty_description": "Vous n'avez pas encore passé de commande.",
+  "orders_empty_title": "Aucune commande trouvée",
+  "origin": "Origine",
+  "other": "Autre",
+  "otp": "OTP",
+  "out_of_stock": "Rupture de stock",
+  "out_of_stock_message": "Cet article est présentement non disponible. Veuillez revenir bientôt.",
+  "outstanding_quality": "Qualité exceptionnelle",
+  "pageTitle": {
+    "404": "Page introuvable",
+    "about-us": "À propos de nous",
+    "addresses": "Adresses",
+    "api": "API",
+    "brands": "Marques",
+    "cart": "Panier",
+    "categories": "Catégories",
+    "delivery-zones": "Zones de livraison",
+    "faqs": "FAQ",
+    "feature-sections": "Sections vedettes",
+    "forgot-password": "Mot de passe oublié",
+    "home": "Accueil",
+    "my-account": "Mon compte",
+    "orders": "Commandes",
+    "privacy-policy": "Politique de confidentialité",
+    "products": "Produits",
+    "refer-and-earn": "Parrainage et récompenses",
+    "return-refund-policy": "Politique de retour et remboursement",
+    "search": "Résultats de recherche",
+    "shopping-list": "Liste d'achats",
+    "shipping-policy": "Politique de livraison",
+    "store-products": "Produits du magasin",
+    "stores": "Magasins",
+    "terms-and-conditions": "Conditions générales",
+    "transactions": "Transactions",
+    "wallet": "Portefeuille",
+    "wishlists": "Listes de souhaits",
+    "seller-registration": "Inscription vendeur"
+  },
+  "pages": {
+    "aboutUs": {
+      "breadcrumb": "À propos de nous",
+      "description": "En savoir plus sur notre entreprise, notre mission et nos valeurs.",
+      "notAvailable": "Non disponible",
+      "title": "À propos de nous"
+    },
+    "addresses": {
+      "addFirst": "Ajouter votre première adresse",
+      "addNew": "Ajouter",
+      "errorLoading": "Erreur lors du chargement des adresses",
+      "myAddresses": "Mes adresses",
+      "noAddresses": "Aucune adresse enregistrée",
+      "noAddressesDesc": "Ajoutez votre première adresse pour commencer avec un paiement et une livraison plus rapides.",
+      "showingRange": "Affichage de {{from}} à {{to}} sur {{total}} adresses",
+      "subtitle": "Gérez vos informations d'adresse pour un paiement et une livraison plus rapides",
+      "total": "total",
+      "tryAgain": "Réessayer"
+    },
+    "brandProducts": {
+      "breadcrumb": {
+        "brands": "Marques"
+      },
+      "highlight": "{{count}} Produits",
+      "metaDescription": "Parcourez {{count}} produits de {{brand}}.",
+      "metaTitle": "Produits - Magasiner par choix",
+      "noProducts": {
+        "description": "Aucun produit n'est présentement disponible dans cette marque.",
+        "title": "Aucun produit disponible"
+      },
+      "subtitle": "Parcourez les produits de {{brand}}.",
+      "title": "Produits {{brand}}"
+    },
+    "brands": {
+      "breadcrumb": {
+        "brands": "Marques"
+      },
+      "highlight": "{{count}} Marques",
+      "infiniteScroll": "Marques",
+      "metaDescription": "Parcourez les {{count}} marques disponibles dans notre magasin.",
+      "metaTitle": "Marques - Tout explorer",
+      "noBrands": {
+        "description": "Présentement, il n'y a aucune marque à afficher.",
+        "title": "Aucune marque disponible"
+      },
+      "subtitle": "Découvrez notre collection complète de marques",
+      "title": "Toutes les marques"
+    },
+    "categories": {
+      "highlight": "Catégories",
+      "infiniteScroll": "Catégories",
+      "noCategories": {
+        "description": "Aucune catégorie n'est présentement disponible.",
+        "title": "Aucune catégorie disponible"
+      },
+      "subtitle": "Découvrez notre collection complète de",
+      "title": "Toutes les catégories"
+    },
+    "categoryProducts": {
+      "highlight": "Produits",
+      "infiniteScroll": "Produits",
+      "metaDescription": "Parcourez {{count}} produits de {{category}}.",
+      "metaTitle": "Produits {{category}} - Magasiner par choix",
+      "noProducts": {
+        "description": "Cette catégorie est présentement vide. Les produits apparaîtront ici une fois ajoutés.",
+        "title": "Aucun produit dans cette catégorie"
+      },
+      "subtitle": "Parcourez les produits de {{category}}.",
+      "title": "Produits {{category}}"
+    },
+    "deliveryZoneDetail": {
+      "boundaryPoints": "Points de délimitation",
+      "bufferTime": "Temps tampon",
+      "centerCoords": "Coordonnées du centre",
+      "coverageArea": "Zone de couverture",
+      "coverageDetails": "Détails de la couverture",
+      "deliveryFees": "Frais de livraison",
+      "deliveryTimes": "Délais de livraison",
+      "errorLoading": "Erreur de chargement de la zone",
+      "errorLoadingDesc": "Une erreur est survenue lors du chargement de la zone de livraison.",
+      "freeDeliveryAbove": "Livraison gratuite au-dessus de",
+      "handlingFee": "Frais de manutention",
+      "loadingDescription": "Veuillez patienter pendant que nous récupérons les informations de la zone de livraison.",
+      "loadingTitle": "Chargement des détails de la zone",
+      "metaDescription": "metaDescription",
+      "perKmCharge": "Frais par km",
+      "perStoreFee": "Frais par magasin",
+      "radius": "Rayon",
+      "regularDelivery": "Livraison régulière",
+      "regularTimePerKm": "Temps régulier par km",
+      "rushDelivery": "Livraison express",
+      "rushTimePerKm": "Temps express par km",
+      "subtitle": "Voir les détails de la zone de livraison",
+      "titleSuffix": "Zone de livraison",
+      "zoneInfo": "Informations sur la zone",
+      "zoneNotFound": "Zone introuvable",
+      "zoneNotFoundDesc": "La zone de livraison que vous recherchez n'existe pas."
+    },
+    "deliveryZones": {
+      "noZonesDescription": "Aucune zone de livraison n'est présentement disponible.",
+      "noZonesTitle": "Aucune zone de livraison disponible",
+      "subtitle": "Découvrez nos zones de service",
+      "title": "Zones de livraison",
+      "totalZones": "zones"
+    },
+    "faqs": {
+      "searchPlaceholder": "Rechercher dans la FAQ...",
+      "subtitle": "Trouvez des réponses aux questions fréquentes sur nos services",
+      "title": "Foire aux questions"
+    },
+    "featureSection": {
+      "defaultTitle": "Magasiner par choix",
+      "metaDescription": "Parcourez les {{count}} produits de {{title}}.",
+      "products": "Produits",
+      "subtitle": "Parcourez tous les produits de",
+      "titleSuffix": "Magasiner par choix"
+    },
+    "featureSections": {
+      "noSections": "Aucune section vedette disponible pour le moment.",
+      "sections": "Sections",
+      "subtitle": "Parcourez nos collections sélectionnées",
+      "title": "Sections vedettes"
+    },
+    "forgotPassword": {
+      "checkEmail": "Nous avons envoyé un lien de réinitialisation du mot de passe à {{email}}",
+      "emailLabel": "Adresse courriel",
+      "emailPlaceholder": "Entrez votre adresse courriel",
+      "emailSent": "Courriel envoyé avec succès!",
+      "enterEmail": "Veuillez entrer votre adresse courriel",
+      "error": "Une erreur est survenue. Veuillez réessayer.",
+      "failed": "Échec de l'envoi du courriel de réinitialisation",
+      "goHome": "Aller à l'accueil maintenant",
+      "instructions": "Veuillez vérifier votre courriel et suivre les instructions pour réinitialiser votre mot de passe.",
+      "invalidEmail": "* Veuillez entrer un courriel valide",
+      "redirecting": "Redirection vers la page d'accueil dans :",
+      "rememberPassword": "Vous vous souvenez de votre mot de passe?",
+      "sendLink": "Envoyer le lien de réinitialisation",
+      "sending": "Envoi...",
+      "signIn": "Se connecter",
+      "subtitle": "Pas de souci! Entrez votre adresse courriel et nous vous enverrons un lien pour réinitialiser votre mot de passe.",
+      "title": "Mot de passe oublié?",
+      "unknownError": "Une erreur inconnue est survenue."
+    },
+    "myAccount": {
+      "alertDesc": "Ceci supprimera définitivement votre compte.",
+      "alertTitle": "Suppression définitive",
+      "confirmText": "Supprimer",
+      "contactInfo": "Coordonnées",
+      "deleteAccount": "Supprimer le compte",
+      "deleteDesc": "Cette action est irréversible",
+      "headerSubtitle": "Gérez vos informations personnelles et les paramètres de votre compte",
+      "headerTitle": "Mon profil",
+      "labels": {
+        "email": "Adresse courriel",
+        "fullName": "Nom complet",
+        "memberSince": "Membre depuis",
+        "phone": "Numéro de téléphone",
+        "referral": "Parrainage d'un ami"
+      },
+      "personalInfo": "Informations personnelles",
+      "saveChanges": "Sauvegarder les modifications",
+      "toasts": {
+        "deleteFailedDesc": "Nous avons rencontré un problème lors de la suppression de votre compte.",
+        "deleteFailedTitle": "Échec de la suppression du compte",
+        "deleteSuccessDesc": "Votre compte a été définitivement supprimé. Merci!",
+        "deleteSuccessTitle": "Compte supprimé avec succès",
+        "errorDesc": "Une erreur est survenue. Veuillez réessayer plus tard.",
+        "errorTitle": "Erreur inattendue",
+        "successDesc": "Vos données ont été mises à jour avec succès.",
+        "successTitle": "Succès",
+        "updateFailedDesc": "Un problème est survenu lors de la mise à jour de vos données.",
+        "updateFailedTitle": "Échec de la mise à jour"
+      }
+    },
+    "shoppingList": {
+      "headerTitle": "Liste d'achats",
+      "headerSubtitle": "Transformez vos idées de mots-clés en listes de produits prêtes à acheter.",
+      "keywordInputLabel": "Ajouter des mots-clés",
+      "keywordInputPlaceholder": "ex. lait bio, chocolat noir, pain frais",
+      "keywordHelper": "Tapez un mot-clé et appuyez sur Entrée ou ajoutez-en plusieurs avec des virgules.",
+      "addKeyword": "Ajouter un mot-clé",
+      "fetchProducts": "Trouver des produits",
+      "refreshResults": "Rafraîchir les résultats",
+      "clearAll": "Tout effacer",
+      "keywordsCount": "{{count}} mot(s)-clé(s) prêt(s)",
+      "emptyKeywordsTitle": "Commencez avec un mot-clé",
+      "emptyKeywordsDescription": "Ajoutez au moins un mot-clé pour créer une liste d'achats personnalisée.",
+      "locationMissing": "Définissez votre lieu de livraison pour obtenir une disponibilité précise.",
+      "errorTitle": "Impossible de charger les produits",
+      "errorDescription": "Veuillez réessayer ou ajuster vos mots-clés.",
+      "emptyResultsTitle": "Aucun produit trouvé",
+      "emptyResultsDescription": "Essayez différents mots-clés ou élargissez vos termes de recherche.",
+      "sectionTitle": "Résultats pour « {{keyword}} »",
+      "productsCount": "{{count}} produits"
+    },
+    "notFound": {
+      "heading": "Oups! Page introuvable",
+      "home": {
+        "subtitle": "Rien ne vaut la page d'accueil...",
+        "title": "Page d'accueil"
+      },
+      "subheading": "Il semble que la page que vous cherchez n'existe pas. Ne vous inquiétez pas, remettons-vous sur la bonne voie!"
+    },
+    "order": {
+      "backToList": "Retour aux commandes",
+      "details": "Détails de la commande",
+      "detailsSubtitle": "Consultez les informations et le statut de votre commande",
+      "errorLoading": "Erreur de chargement de la commande",
+      "loading": "Chargement des détails de la commande...",
+      "notFound": "Commande introuvable",
+      "notFoundDesc": "La commande que vous recherchez n'existe pas ou a été supprimée."
+    },
+    "ordersPage": {
+      "emptyMessage": "Vous n'avez pas encore de commandes. Commencez à magasiner pour les voir ici.",
+      "emptyTitle": "Aucune commande trouvée",
+      "errorTitle": "Erreur de chargement des commandes",
+      "loading": "Chargement de vos commandes...",
+      "subtitle": "Gérez vos informations de commande et leur statut",
+      "tryAgain": "Réessayer"
+    },
+    "privacyPolicy": {
+      "description": "Apprenez-en plus sur vos droits à la vie privée et le traitement de vos données.",
+      "notAvailable": "Non disponible",
+      "title": "Politique de confidentialité"
+    },
+    "referAndEarnPage": {
+      "header": {
+        "subtitle": "Invitez vos amis à rejoindre et obtenez la récompense",
+        "title": "Parrainage et récompenses"
+      },
+      "hero": {
+        "description": "Partagez votre code de parrainage unique avec vos amis et gagnez des récompenses lorsqu'ils effectuent leur premier achat.",
+        "earn": "Gagnez {{currency}} 300 pour chaque parrainage!",
+        "instantRewards": "Récompenses instantanées",
+        "perReferral": "Par parrainage",
+        "referrals": "Parrainages"
+      },
+      "howItWorks": {
+        "bonusDescription": "Votre ami obtient un rabais de {{currency}} 100 sur sa première commande.",
+        "bonusRewards": "Récompenses bonus!",
+        "stepDescription": "Description de l'étape ici.",
+        "stepTitle": "Étape {{step}}",
+        "title": "Comment ça fonctionne"
+      },
+      "progress": {
+        "nextMilestone": "Progression vers le prochain jalon",
+        "referMore": "Parrainez {{remaining}} ami(s) de plus pour débloquer un bonus de {{currency}}{{bonus}}!",
+        "subtitle": "Vous faites du bon travail! Continuez à partager pour gagner plus de récompenses.",
+        "title": "Progression du parrainage"
+      },
+      "referralCode": {
+        "copySuccess": "Copié!",
+        "referralLink": "Lien de parrainage",
+        "shareSocial": "Partager sur les réseaux sociaux",
+        "title": "Partagez votre code",
+        "yourCode": "Votre code de parrainage"
+      },
+      "stats": {
+        "pending": "En attente",
+        "successful": "Réussi",
+        "totalEarnings": "Gains totaux",
+        "totalReferrals": "Total des parrainages"
+      }
+    },
+    "returnRefundPolicy": {
+      "description": "Apprenez-en plus sur notre processus de retour et nos conditions de remboursement.",
+      "title": "Politique de retour et remboursement"
+    },
+    "shippingPolicy": {
+      "description": "Apprenez-en plus sur nos méthodes de livraison, délais et coûts.",
+      "title": "Politique de livraison"
+    },
+    "storeProductsPage": {
+      "breadcrumbs": {
+        "store": "Magasin",
+        "stores": "Magasins"
+      },
+      "highlight": "{{count}} Produits",
+      "loadMoreButton": "Charger plus",
+      "noProducts": {
+        "description": "Aucun produit n'est présentement disponible dans ce magasin.",
+        "title": "Aucun produit disponible"
+      },
+      "refetchButton": "Recharger les produits",
+      "skeleton": "Chargement des produits...",
+      "subtitle": "Parcourez tous les produits de ce magasin",
+      "title": "Produits du magasin"
+    },
+    "stores": {
+      "highlight": "{{count}} Magasins",
+      "noStores": {
+        "description": "Présentement, il n'y a aucun magasin à afficher.",
+        "title": "Aucun magasin disponible"
+      },
+      "search_placeholder": "Rechercher des magasins...",
+      "subtitle": "Explorez notre collection complète de",
+      "title": "Tous les magasins"
+    },
+    "termsAndConditions": {
+      "breadcrumb": "Conditions d'utilisation",
+      "description": "Les règles et conditions d'utilisation de nos services.",
+      "notAvailable": "Non disponible",
+      "title": "Conditions d'utilisation"
+    },
+    "transactionsPage": {
+      "header": {
+        "subtitle": "Consultez vos informations et statuts de transactions",
+        "title": "Mes transactions"
+      },
+      "totalFound": "{{total}} trouvée(s)"
+    },
+    "walletPage": {
+      "header": {
+        "subtitle": "Gérez votre solde de portefeuille, suivez vos transactions et consultez vos crédits.",
+        "title": "Mon portefeuille"
+      },
+      "table": {
+        "title": "Transactions du portefeuille"
+      },
+      "totalFound": "{{total}} transactions trouvées"
+    },
+    "wishlistsPage": {
+      "confirmDelete": "Êtes-vous sûr de vouloir supprimer « {{title}} »? Cette action est irréversible.",
+      "errors": {
+        "deleteFailed": "Échec de la suppression de la liste de souhaits",
+        "fetchDetails": "Échec de la récupération des détails de la liste de souhaits",
+        "fetchFailed": "Échec de la récupération des listes de souhaits",
+        "invalidTitle": "Veuillez entrer un nom de liste de souhaits valide",
+        "network": "Une erreur réseau est survenue",
+        "removeItem": "Échec du retrait de l'article de la liste de souhaits",
+        "updateFailed": "Échec de la mise à jour de la liste de souhaits"
+      }
+    },
+    "sellerRegister": {
+      "pageTitle": "Inscription vendeur",
+      "pageSubtitle": "Inscrivez-vous en tant que vendeur et faites croître votre entreprise avec nous.",
+      "personalInfo": "Informations personnelles",
+      "requiredDocs": "Documents requis",
+      "businessAddress": "Adresse de l'entreprise",
+
+      "form": {
+        "sellerName": "Nom du vendeur",
+        "mobile": "Numéro de cellulaire",
+        "email": "Adresse courriel",
+        "password": "Mot de passe",
+        "confirmPassword": "Confirmer le mot de passe",
+        "address": "Adresse",
+        "city": "Ville",
+        "landmark": "Point de repère",
+        "state": "Province",
+        "zipcode": "Code postal",
+        "country": "Pays",
+        "latitude": "Latitude",
+        "longitude": "Longitude"
+      },
+
+      "placeholder": {
+        "sellerName": "Entrez votre nom complet",
+        "mobile": "Entrez votre numéro de cellulaire",
+        "email": "Entrez votre adresse courriel",
+        "address": "ex. 123, Complexe Shree, chemin de la Station",
+        "city": "ex. Montréal",
+        "landmark": "ex. Près de la gare d'autobus",
+        "state": "ex. Québec",
+        "zipcode": "ex. H2X 1Y4",
+        "country": "ex. Canada",
+        "latitude": "ex. 23.241999",
+        "longitude": "ex. 69.666881"
+      },
+
+      "docs": {
+        "businessLicense": "Permis d'entreprise",
+        "articlesOfIncorporation": "Statuts constitutifs",
+        "nationalId": "Carte d'identité nationale",
+        "authorizedSignature": "Signature autorisée"
+      },
+
+      "button": {
+        "chooseFile": "Choisir un fichier",
+        "register": "S'inscrire",
+        "reset": "Réinitialiser"
+      },
+
+      "toast": {
+        "invalidFileTitle": "Type de fichier invalide",
+        "invalidFileDescription": "Seuls les fichiers JPEG, PNG, JPG ou WEBP sont acceptés.",
+        "validationErrorTitle": "Erreur de validation",
+        "validationErrorDesc": "Veuillez corriger les champs en surbrillance avant de soumettre.",
+        "successTitle": "Succès!",
+        "successDesc": "Votre inscription en tant que vendeur a été effectuée avec succès.",
+        "errorTitle": "Erreur",
+        "genericErrorDesc": "L'inscription a échoué. Veuillez réessayer.",
+        "unexpectedError": "Une erreur inattendue est survenue. Veuillez réessayer plus tard.",
+        "missingDocumentsTitle": "Documents manquants",
+        "missingDocumentsDesc": "Veuillez téléverser : {{files}}",
+        "invalidFileTypeTitle": "Type de fichier invalide",
+        "invalidFileTypeDesc": "Seuls les fichiers JPEG, PNG, JPG ou WEBP sont acceptés. Invalide(s) : {{types}}"
+      },
+
+      "error": {
+        "required": "Requis",
+        "passwordMismatch": "Les mots de passe doivent correspondre",
+        "invalidFile": "Type de fichier invalide"
+      }
+    },
+    "enhancedSellerMarketing": {
+      "hero": {
+        "badge": "Élevez votre marque avec nous",
+        "titleMain": "Propulser votre succès avec une",
+        "titleAccent": "Expertise numérique",
+        "description": "Conçu pour le commerce hyperlocal. Activez les commandes en ligne, gérez votre catalogue et connectez les options d'exécution adaptées à vos opérations.",
+        "explore": "Explorer davantage",
+        "registerNow": "S'inscrire maintenant",
+        "bubble": {
+          "title": "Boîte à outils",
+          "subtitle": "Outils vendeur"
+        },
+        "chips": {
+          "easyOnboarding": "Intégration facile",
+          "deliveryPartnerSupport": "Soutien aux partenaires de livraison",
+          "reliableSettlements": "Règlements fiables"
+        }
+      },
+      "marquee": {
+        "contentMarketing": "Marketing de contenu",
+        "socialMediaMarketing": "Marketing des médias sociaux",
+        "seo": "Optimisation pour les moteurs de recherche",
+        "businessGrowth": "Croissance de l'entreprise"
+      },
+      "about": {
+        "badge": "À propos de nous",
+        "titleMain": "Propulser votre succès avec une",
+        "titleAccent": "Expertise numérique",
+        "description": "Nous soutenons le commerce local en connectant les vendeurs avec les clients à proximité grâce à l'exécution hyperlocale. La plateforme aide les entreprises à croître tout en simplifiant la logistique, les paiements et la technologie.",
+        "button": "À propos de nous",
+        "metrics": {
+          "marketingGrowth": "Marketing et croissance de l'entreprise",
+          "creativityInnovation": "Créativité et innovation",
+          "businessFinanceMgmt": "Gestion des affaires et des finances"
+        }
+      },
+      "benefits": {
+        "badge": "Pourquoi nous choisir",
+        "title": "Tout ce dont vous avez besoin pour réussir",
+        "description": "Concentrez-vous sur la vente de bons produits pendant que nous nous occupons du reste",
+        "items": {
+          "deliveryIntegrations": {
+            "title": "Intégrations de livraison",
+            "desc": "Fonctionne avec vos partenaires de livraison préférés",
+            "metric": "Flexible"
+          },
+          "flexibleOnboarding": {
+            "title": "Intégration flexible",
+            "desc": "Commencez rapidement avec des exigences configurables",
+            "metric": "Configurable"
+          },
+          "localFulfillment": {
+            "title": "Exécution locale",
+            "desc": "Optimisé pour les commandes à proximité",
+            "metric": "Hyperlocal"
+          },
+          "businessInsights": {
+            "title": "Aperçus d'affaires",
+            "desc": "Analyses pour comprendre la performance",
+            "metric": "Aperçus"
+          },
+          "trustedPayments": {
+            "title": "Paiements de confiance",
+            "desc": "Soutien aux flux de règlement sécurisés",
+            "metric": "Sécurisé"
+          },
+          "customerReach": {
+            "title": "Portée client",
+            "desc": "Connectez-vous avec les acheteurs locaux",
+            "metric": "Local"
+          }
+        }
+      },
+      "how": {
+        "title": "Commencez à vendre en 3 étapes simples",
+        "subtitle": "Démarrez rapidement",
+        "steps": {
+          "register": {
+            "title": "Inscrivez-vous et vérifiez",
+            "desc": "Inscription et vérification simples"
+          },
+          "list": {
+            "title": "Listez vos produits",
+            "desc": "Ajoutez des produits avec nos outils faciles"
+          },
+          "start": {
+            "title": "Commencez à vendre",
+            "desc": "Recevez des commandes, exécutez via des partenaires ou votre propre équipe"
+          }
+        }
+      },
+      "fulfillment": {
+        "title": "Options d'exécution flexibles",
+        "desc": "Intégrez vos partenaires de livraison préférés ou utilisez votre propre équipe. Configurez les expériences selon vos opérations.",
+        "items": {
+          "partnerIntegrations": {
+            "title": "Intégrations partenaires",
+            "desc": "Connectez des fournisseurs tiers"
+          },
+          "realtimeTracking": {
+            "title": "Suivi en temps réel",
+            "desc": "Suivez le statut des commandes"
+          },
+          "policies": {
+            "title": "Politiques configurables",
+            "desc": "Définissez les frais, SLA et règles"
+          }
+        }
+      },
+      "testimonials": {
+        "title": "Ce que disent nos vendeurs",
+        "subtitle": "De vraies histoires de vrais vendeurs",
+        "items": {
+          "localSeller": {
+            "name": "Vendeur local",
+            "business": "Épicerie",
+            "text": "L'intégration et la gestion du catalogue étaient simples."
+          },
+          "bakeryOwner": {
+            "name": "Propriétaire de boulangerie",
+            "business": "Boulangerie",
+            "text": "Les options de livraison flexibles conviennent à nos opérations."
+          },
+          "electronicsShop": {
+            "name": "Magasin d'électronique",
+            "business": "Électronique",
+            "text": "Les aperçus nous ont aidés à optimiser nos processus."
+          }
+        }
+      },
+      "cta": {
+        "title": "Prêt à commencer votre histoire de succès?",
+        "desc": "Commencez en soumettant les détails de votre entreprise ci-dessous.",
+        "registerLabel": "📋 Inscrivez votre entreprise ci-dessous"
+      }
+    }
+  },
+  "partially_refunded": "Partiellement remboursé",
+  "payment": "Paiement",
+  "paymentDetails": "Détails du paiement",
+  "paymentMethod": "Mode de paiement",
+  "paymentStatus": "Statut du paiement",
+  "payment_id": "No de paiement",
+  "payment_method": "Mode de paiement",
+  "payment_status": "Statut du paiement",
+  "payments": {
+    "cod": {
+      "name": "Paiement à la livraison",
+      "tagline": "Payez à votre porte."
+    },
+    "directBankTransfer": {
+      "name": "Virement bancaire direct",
+      "tagline": "Transférez directement vers notre compte bancaire."
+    },
+    "flutterwave": {
+      "name": "Payer avec Flutterwave",
+      "tagline": "Paiements rapides et sécurisés."
+    },
+    "paypal": {
+      "name": "Payer avec PayPal",
+      "tagline": "Solution de paiement de confiance mondiale."
+    },
+    "paystack": {
+      "name": "Payer avec Paystack",
+      "tagline": "Paiements intelligents et simples."
+    },
+    "phonepe": {
+      "name": "Payer avec PhonePe",
+      "tagline": "Paiements UPI et portefeuille simplifiés."
+    },
+    "razorpay": {
+      "name": "Payer avec Razorpay",
+      "tagline": "La passerelle la plus populaire en Inde."
+    },
+    "stripe": {
+      "name": "Payer avec Stripe",
+      "tagline": "Paiements par carte sécurisés à l'échelle mondiale."
+    }
+  },
+  "pending": "En attente",
+  "phoneInput": {
+    "error": {
+      "invalidLength": "Le numéro de téléphone doit comporter {{max}} chiffres",
+      "required": "Veuillez entrer votre numéro de cellulaire"
+    },
+    "label": "Cellulaire",
+    "placeholder": "Entrez votre numéro de téléphone"
+  },
+  "phone_check": {
+    "check_error": "Erreur lors de la vérification de la disponibilité du téléphone",
+    "invalid_phone": "Veuillez entrer un numéro de téléphone valide",
+    "phone_exists": "Un compte avec ce numéro de téléphone existe déjà"
+  },
+  "placedOn": "Passée le",
+  "please_login": "Veuillez vous connecter pour continuer!",
+  "please_select_payment_method": "Veuillez sélectionner le mode de paiement!",
+  "poor_quality": "Qualité médiocre",
+  "price": "Prix",
+  "productFaqs": {
+    "error": "Erreur lors du chargement de la FAQ.",
+    "faqAriaLabel": "FAQ",
+    "noData": "Aucune FAQ disponible pour ce produit.",
+    "searchAriaLabel": "Rechercher dans la FAQ",
+    "searchPlaceholder": "Rechercher dans la FAQ...",
+    "subtitle": "Affichage de {{count}} résultats sur un total de {{total}} FAQ.",
+    "title": "FAQ",
+    "noFaqsYet": "Aucune FAQ disponible",
+    "noFaqsDescription": "Il n'y a présentement aucune question posée pour ce produit.",
+    "noSearchResults": "Aucune FAQ ne correspond à votre recherche. Essayez des mots-clés différents."
+  },
+  "productFilter": {
+    "applyFilters": "Appliquer les filtres",
+    "clearAll": "Tout effacer",
+    "filters": "Filtres",
+    "filtersAndSort": "Filtres et tri",
+    "productsCount": "{{count}} produits",
+    "productsFound": "{{count}} produits trouvés",
+    "sort": {
+      "relevance": "Pertinence",
+      "priceLowToHigh": "Prix : croissant",
+      "priceHighToLow": "Prix : décroissant",
+      "highestRated": "Mieux notés",
+      "bestSeller": "Meilleur vendeur",
+      "featured": "Vedettes"
+    },
+    "sortBy": "Trier par"
+  },
+  "productReviews": {
+    "error": "Erreur lors du chargement des avis.",
+    "noData": "Aucun avis disponible pour ce produit.",
+    "reviewImageAlt": "Image de l'avis {{index}}",
+    "sort": {
+      "latest": "Plus récents",
+      "oldest": "Plus anciens"
+    },
+    "sortAriaLabel": "Trier par",
+    "subtitle": "Affichage de {{count}} résultats sur un total de {{total}} avis.",
+    "title": "Notes et avis ({{count}})",
+    "noReviewsYet": "Aucun avis pour le moment",
+    "noReviewsDescription": "Ce produit n'a pas encore reçu d'avis. Soyez le premier à partager votre expérience!"
+  },
+  "product_image_alt": "Image du produit",
+  "product_modal": {
+    "add_to_cart_title": "Ajouter au panier",
+    "cancel": "Annuler",
+    "constraints": "Min : {{min}}, Incrément : {{step}}",
+    "discount_percent": "{{percent}}% de rabais",
+    "low_stock_alert": "Dépêchez-vous! Seulement {{stock}} restant(s).",
+    "out_of_stock": "Rupture de stock",
+    "qty": "Qté",
+    "save": "Économisez {{amount}}",
+    "select_options": "Sélectionner les options",
+    "sku": "UGS : {{sku}}",
+    "stock": "Stock : {{stock}} disponible(s)",
+    "subtotal": "Sous-total ({{count}} articles)",
+    "toast": {
+      "max_limit_desc": "Vous ne pouvez pas commander plus de {{max}} articles",
+      "max_limit_title": "Limite maximale atteinte",
+      "min_limit_desc": "Vous ne pouvez pas commander moins de {{min}}",
+      "min_limit_title": "Limite minimale atteinte",
+      "stock_limit_desc": "Seulement {{stock}} articles disponibles en stock",
+      "stock_limit_title": "Limite de stock atteinte"
+    },
+    "total_savings": "Économies totales",
+    "untitled": "Produit sans titre"
+  },
+  "products": "Produits",
+  "products_count": "{{count}} produits",
+  "profile": "Profil",
+  "profileBtn": {
+    "addresses": "Adresses",
+    "logout": "Déconnexion",
+    "myAccount": "Mon compte",
+    "myOrders": "Mes commandes",
+    "signedInAs": "Connecté en tant que",
+    "transactions": "Transactions",
+    "wallet": "Portefeuille"
+  },
+  "promoCode": {
+    "applied": "Appliqué avec succès",
+    "appliedSuccess": "Code promo appliqué avec succès",
+    "error": "Échec de l'application du code promo. Veuillez réessayer.",
+    "invalid": "Code promo invalide",
+    "invalidMessage": "Le code promo est invalide, veuillez le retirer.",
+    "placeholder": "Entrez le code promo",
+    "removed": "Code promo retiré",
+    "sectionDescription": "Appliquez un code promo pour obtenir des rabais",
+    "sectionTitle": "Code promo",
+    "selectAddress": "Veuillez sélectionner une adresse pour l'appliquer.",
+    "pleaseSelectAddress": "Veuillez sélectionner une adresse avant de l'appliquer."
+  },
+  "promoDiscount": "Rabais promo",
+  "qty": "Qté",
+  "qtyInput": {
+    "maxLimitDescription": "Vous ne pouvez pas commander plus de {{max}}",
+    "maxLimitTitle": "Limite maximale atteinte",
+    "minLimitDescription": "Vous ne pouvez pas commander moins de {{min}}",
+    "minLimitTitle": "Limite minimale atteinte"
+  },
+  "quantity": "Quantité :",
+  "radius": "Rayon :",
+  "rate_your_experience": "Évaluez votre expérience",
+  "rating": "{{ratings}} Évaluation",
+  "ratings": "évaluations",
+  "recent_searches": "Recherches récentes",
+  "referAndEarn": {
+    "unlimited": "Illimité",
+    "instant": "Instantané"
+  },
+  "theme": {
+    "switchToDark": "Passer au mode sombre",
+    "switchToLight": "Passer au mode clair"
+  },
+  "products": {
+    "allProducts": "Tous les produits",
+    "discoverCollection": "Découvrez notre collection complète de",
+    "productsCount": "Produits"
+  },
+  "store": {
+    "closed": "Fermé",
+    "openNow": "Ouvert",
+    "offline": "Hors ligne"
+  },
+  "entityType": {
+    "product": "produit",
+    "store": "magasin",
+    "zone": "zone",
+    "section": "section"
+  },
+  "refresh": "Rafraîchir",
+  "refresh_location": "Rafraîchir l'emplacement",
+  "refunded": "Remboursé",
+  "register_modal": {
+    "buttons": {
+      "back_to_details": "Retour aux détails",
+      "get_started": "Commencer",
+      "resend_code": "Renvoyer le code",
+      "send_verification": "Envoyer le code de vérification",
+      "verify_create": "Vérifier et créer le compte"
+    },
+    "fields": {
+      "confirmPassword": {
+        "label": "Confirmer le mot de passe",
+        "placeholder": "Confirmez le mot de passe"
+      },
+      "email": {
+        "label": "Courriel",
+        "placeholder": "Entrez votre courriel"
+      },
+      "name": {
+        "label": "Nom complet",
+        "placeholder": "Entrez votre nom"
+      },
+      "otp": {
+        "errors": {
+          "required": "Veuillez entrer le code de vérification"
+        },
+        "placeholder": "Entrez le OTP"
+      },
+      "password": {
+        "description": "Doit contenir 8 caractères ou plus",
+        "label": "Mot de passe",
+        "placeholder": "Entrez le mot de passe"
+      },
+      "phone": {
+        "label": "Téléphone",
+        "placeholder": "Entrez votre numéro de téléphone"
+      }
+    },
+    "links": {
+      "login": "Connexion"
+    },
+    "messages": {
+      "account_created": "Compte créé avec succès!",
+      "already_account": "Vous avez déjà un compte?",
+      "did_not_receive_code": "Vous n'avez pas reçu le code?",
+      "or": "OU",
+      "start_using": "Commencez à utiliser votre compte maintenant"
+    },
+    "steps": {
+      "complete": {
+        "subtitle": "",
+        "title": "Succès"
+      },
+      "details": {
+        "subtitle": "Entrez vos informations pour commencer",
+        "title": "Inscription"
+      },
+      "otp": {
+        "subtitle": "Entrez le code envoyé au {{phoneNumber}}",
+        "title": "Vérifier le téléphone"
+      }
+    },
+    "toasts": {
+      "firebase_error": {
+        "description": "Firebase n'est pas initialisé. Veuillez réessayer.",
+        "title": "Erreur Firebase"
+      },
+      "invalid_otp": {
+        "description": "Veuillez entrer un code de vérification valide à 6 chiffres",
+        "title": "OTP invalide"
+      },
+      "invalid_phone": {
+        "description": "Veuillez entrer un numéro de téléphone valide",
+        "title": "Erreur de validation"
+      },
+      "validating_info": {
+        "description": "Validation de vos informations...",
+        "title": "Veuillez patienter"
+      },
+      "validation_error": {
+        "description": "Veuillez corriger toutes les erreurs de validation avant de continuer",
+        "title": "Erreur de validation"
+      },
+      "verification_error": {
+        "description": "Échec de la vérification du OTP",
+        "title": "Erreur de vérification"
+      }
+    }
+  },
+  "register_toast": {
+    "error_desc": "Une erreur inattendue est survenue. Veuillez réessayer plus tard.",
+    "error_title": "Erreur d'inscription",
+    "failed_title": "Échec de l'inscription",
+    "success_desc": "Vous vous êtes inscrit avec succès. Bienvenue!",
+    "success_title": "Inscription réussie!"
+  },
+  "remove": "Retirer",
+  "remove_item": "Retirer l'article",
+  "request_sent": "Demande envoyée",
+  "resend_otp_toast": {
+    "invalid_phone_desc": "Veuillez entrer un numéro de téléphone valide avec l'indicatif du pays (ex. +1234567890)",
+    "invalid_phone_title": "Numéro de téléphone invalide",
+    "otp_resent_desc": "Un nouveau code de vérification a été envoyé à votre téléphone",
+    "otp_resent_title": "OTP renvoyé",
+    "recaptcha_error_desc": "Échec de l'initialisation de la vérification reCAPTCHA",
+    "recaptcha_error_title": "Erreur reCAPTCHA",
+    "resend_otp_error_title": "Erreur de renvoi du OTP"
+  },
+  "returns": "Retours",
+  "return": "Retour",
+  "review": "Avis",
+  "reviewSeller": "Évaluer le vendeur",
+  "review_comment_required": "Le commentaire d'avis est requis",
+  "review_posted_successfully": "Merci d'avoir partagé votre avis! Votre évaluation a été publiée avec succès.",
+  "review_submission_failed": "Nous n'avons pas pu publier votre avis. Veuillez vérifier vos informations et réessayer.",
+  "review_submitted": "Avis soumis",
+  "review_title": "Titre de l'avis",
+  "review_title_placeholder": "Résumez votre expérience en quelques mots",
+  "review_title_required": "Le titre de l'avis est requis",
+  "reviewed_on": "Évalué le {{date}}",
+  "reviews": "Avis",
+  "rushAvailable": "Express disponible",
+  "rushDeliveryUnavailable": "La livraison express n'est pas disponible pour cette adresse.",
+  "save": "Sauvegarder",
+  "saveForLaterTitle": "Sauvegarder pour plus tard",
+  "save_changes": "Sauvegarder les modifications",
+  "saving": "Sauvegarde...",
+  "scroll_more": "Défilez vers le bas pour découvrir plus de {{entityType}}",
+  "search": "Rechercher...",
+  "search_error_message": "Nous ne pouvons pas rechercher de produits en ce moment. Veuillez réessayer.",
+  "search_placeholder": "Rechercher des produits, des marques...",
+  "search_products": "Rechercher des produits",
+  "search_results": "Résultats de recherche",
+  "searching_products": "Recherche de produits...",
+  "seeAll": "Voir tout",
+  "see_all": "Voir tout",
+  "see_more": "Voir plus",
+  "see_less": "Voir moins",
+  "selectOptions": "Sélectionner les options",
+  "select_payment_method": "Sélectionner le mode de paiement",
+  "select_rating": "Veuillez sélectionner une note",
+  "select_status": "Sélectionner le statut",
+  "select_type": "Sélectionner le type",
+  "selected": "Sélectionné",
+  "seller": "Vendeur",
+  "sellerReviewsTitle": "Avis sur le vendeur",
+  "send_request": "Envoyer la demande",
+  "share_your_thoughts": "Partagez vos impressions et aidez les autres à prendre de meilleures décisions",
+  "shippingAddress": "Adresse de livraison",
+  "signup_toast": {
+    "invalid_phone_desc": "Veuillez entrer un numéro de téléphone valide avec l'indicatif du pays (ex. +1234567890)",
+    "invalid_phone_title": "Numéro de téléphone invalide",
+    "otp_sent_desc": "Le code de vérification a été envoyé à votre téléphone",
+    "otp_sent_title": "OTP envoyé",
+    "recaptcha_error_desc": "Échec de l'initialisation de la vérification reCAPTCHA",
+    "recaptcha_error_title": "Erreur reCAPTCHA",
+    "signup_error_title": "Erreur d'inscription"
+  },
+  "similarProducts": "Produits similaires",
+  "sku": "UGS",
+  "soldBy": "Vendu par",
+  "soldBySection": {
+    "acceptingOrders": "Accepte présentement les commandes.",
+    "closed": "Fermé",
+    "noLogo": "Aucun logo",
+    "noSellerInfo": "Informations sur le vendeur non disponibles",
+    "open": "Ouvert",
+    "opensAt": "Ouvre à",
+    "storeClosed": "Le magasin est présentement fermé.",
+    "storeLabel": "Magasin :"
+  },
+  "something_went_wrong": "Une erreur est survenue",
+  "status": "Statut",
+  "step_error_description": "Vous ne pouvez commander qu'en multiples de {{step}}.",
+  "step_error_title": "Incrément de quantité invalide",
+  "stockAvailable": "Stock : {{stock}} disponible(s)",
+  "stock_limit_error_description": "Seulement {{stock}} article(s) disponible(s) en stock.",
+  "stock_limit_error_title": "Limite de stock atteinte",
+  "store_closed": "Magasin fermé",
+  "store_closed_message": "Nous prenons une pause en ce moment. Revenez bientôt!",
+  "store_currently_closed": "Le magasin est présentement fermé",
+  "subcategories": "Sous-catégories",
+  "submission_failed": "Échec de la soumission",
+  "submit_review": "Soumettre l'avis",
+  "submitting": "Soumission...",
+  "subtotal": "Sous-total",
+  "success": "Succès",
+  "terrible_experience": "Expérience terrible",
+  "tip": {
+    "clearButton": "Effacer",
+    "currentAmount": "Vous ajoutez un pourboire de {{amount}}. Merci pour votre générosité! 🙏",
+    "customPlaceholder": "Montant personnalisé",
+    "defaultMessage": "🙏 Votre partenaire de livraison appréciera votre gentillesse. 🙏",
+    "sectionDescription": "Votre gentillesse compte beaucoup! 100% du pourboire va à votre partenaire de livraison.",
+    "sectionTitle": "Pourboire pour votre partenaire de livraison"
+  },
+  "total": "Total",
+  "track": "Suivre",
+  "trackOrder": "Suivre la commande",
+  "track_order": "Suivre la commande",
+  "trackOrderModal": {
+    "orderNumber": "Commande #{{slug}}",
+    "loading": "Chargement des informations de livraison...",
+    "error": {
+      "fetchFailed": "Échec de la récupération de l'emplacement de livraison",
+      "generic": "Une erreur est survenue lors de la récupération de l'emplacement"
+    },
+    "orderStatus": "Statut de la commande",
+    "deliveryPartnerLabel": "(Partenaire de livraison)",
+    "active": "Active",
+    "deliveryRoute": "Itinéraire de livraison",
+    "riderLocation": "Emplacement du livreur",
+    "totalDistance": "Distance totale",
+    "km": "km",
+    "kmFromPrevious": "km du précédent"
+  },
+  "transaction_id": "No de transaction",
+  "try_again": "Réessayer",
+  "type": "Type",
+  "type_at_least_2_chars": "Tapez au moins 2 caractères",
+  "typing_message": "Nous rechercherons au fur et à mesure que vous tapez...",
+  "unable_to_get_delivery_partner": "Impossible d'obtenir l'emplacement du partenaire de livraison",
+  "unable_to_load_offers": "Impossible de charger les offres",
+  "unexpected_error": "Erreur inattendue",
+  "untitled_product": "Produit sans titre",
+  "updateReview": "Modifier l'avis",
+  "update_failed_description": "Nous n'avons pas pu mettre à jour l'article du panier.",
+  "update_failed_title": "Échec de la mise à jour",
+  "updates_every_30s": "Mise à jour toutes les 30 s",
+  "usage": "Utilisation",
+  "userLayout": {
+    "addresses": "Adresses",
+    "myAccount": "Mon compte",
+    "myOrders": "Mes commandes",
+    "myWishlists": "Mes listes de souhaits",
+    "shoppingList": "Liste d'achats",
+    "online": "En ligne",
+    "transactions": "Transactions",
+    "wallet": "Portefeuille"
+  },
+  "validTill": "Valide jusqu'au",
+  "validation": {
+    "locationRequired": "Veuillez sélectionner un emplacement sur la carte",
+    "mobileInvalid": "Entrez un numéro valide à 10 chiffres",
+    "mobileRequired": "Le numéro de cellulaire est requis",
+    "required": "Requis"
+  },
+  "very_bad": "Très mauvais",
+  "very_good": "Très bon",
+  "viewOnMap": "Voir sur la carte",
+  "view_all": "Voir tout",
+  "view_map": "Voir la carte",
+  "view_review": "Voir l'avis",
+  "wallet": "Portefeuille",
+  "wallet_transactions_table": "Tableau des transactions du portefeuille",
+  "warranty": "Garantie",
+  "wishlist": {
+    "button": {
+      "create": "Créer",
+      "creating": "Création..."
+    },
+    "confirm_delete_wishlist": "Êtes-vous sûr de vouloir supprimer cette liste de souhaits?",
+    "confirm_remove_item": "Êtes-vous sûr de vouloir retirer cet article de la liste de souhaits?",
+    "createNew": "Créer une nouvelle liste de souhaits",
+    "create_first_wishlist": "Créez votre première liste de souhaits ci-dessus",
+    "create_new_wishlist": "Créer une nouvelle liste de souhaits",
+    "delete_wishlist": "Supprimer la liste de souhaits",
+    "edit_wishlist_error": "Le nom est requis",
+    "edit_wishlist_label": "Nom de la liste de souhaits",
+    "edit_wishlist_placeholder": "Entrez le nom de la liste de souhaits",
+    "edit_wishlist_title": "Modifier la liste de souhaits",
+    "empty": {
+      "description": "Choisissez une liste de souhaits dans la barre latérale pour voir ses produits",
+      "title": "Sélectionnez une liste de souhaits"
+    },
+    "enter_wishlist_name": "Entrez le nom de la liste de souhaits...",
+    "error": {
+      "failed": "Échec de la création de la liste de souhaits",
+      "required": "Veuillez entrer un nom de liste de souhaits"
+    },
+    "failed_add_to_wishlist": "Échec de l'ajout à la liste de souhaits",
+    "failed_create_wishlist": "Échec de la création de la liste de souhaits",
+    "failed_delete_wishlist": "Échec de la suppression de la liste de souhaits",
+    "failed_fetch_wishlists": "Échec de la récupération des listes de souhaits",
+    "failed_remove_item": "Échec du retrait de l'article de la liste de souhaits",
+    "inputPlaceholder": "Entrez le nom de la liste de souhaits...",
+    "loading_wishlists": "Chargement des listes de souhaits...",
+    "modalTitle": "Sauvegarder dans la liste de souhaits",
+    "move_modal_title": "Déplacer vers une autre liste de souhaits",
+    "no_other_wishlists": "Aucune autre liste de souhaits disponible.",
+    "no_wishlists_found": "Aucune liste de souhaits trouvée",
+    "save_to_wishlist": "Sauvegarder dans la liste de souhaits",
+    "select_wishlist": "Sélectionner la liste de souhaits",
+    "select_wishlist_label": "Sélectionner la liste de souhaits",
+    "select_wishlist_placeholder": "Choisir la liste de souhaits",
+    "selected_wishlist_not_found": "Liste de souhaits sélectionnée introuvable",
+    "wishlist_removeConfirmation": "Êtes-vous sûr de vouloir retirer « {{product}} » de votre liste de souhaits?"
+  },
+  "cookieConsent": {
+    "title": "🍪 Nous respectons votre vie privée",
+    "description": "Ce site Web utilise des témoins (cookies) pour améliorer votre expérience de navigation, analyser le trafic du site et afficher du contenu pertinent. En cliquant sur « Accepter », vous consentez à notre utilisation des témoins.",
+    "learnMore": "En savoir plus sur notre utilisation des témoins dans notre",
+    "privacyPolicyLink": "Politique de confidentialité",
+    "accept": "Accepter",
+    "decline": "Refuser"
+  },
+  "wishlist_button_create": "Créer une liste de souhaits",
+  "wishlist_button_creating": "Création de la liste de souhaits...",
+  "wishlist_create_new": "Créer une nouvelle liste de souhaits",
+  "wishlist_emptyDescription": "Vous n'avez pas encore ajouté d'articles à votre liste de souhaits. Commencez à explorer et sauvegardez vos produits favoris!",
+  "wishlist_emptyTitle": "Votre liste de souhaits est vide",
+  "wishlist_error_failed": "Échec de la création de la liste de souhaits. Veuillez réessayer.",
+  "wishlist_error_required": "Veuillez entrer un nom de liste de souhaits avant de continuer.",
+  "wishlist_input_placeholder": "Entrez le nom de la liste de souhaits",
+  "wishlist_modal_title": "Nouvelle liste de souhaits",
+  "wishlist_selectTitle": "Sélectionnez une liste de souhaits",
+  "wishlist_selectDescription": "Choisissez une liste de souhaits à gauche pour voir ses produits.",
+  "withdraw": "Retirer",
+  "withdraw_funds": "Retirer des fonds",
+  "withdrawal_request_failed": "La demande de retrait a échoué.",
+  "withdrawal_request_success": "Votre demande de retrait a été soumise avec succès.",
+  "work": "Travail",
+  "yes_cancel": "Oui, annuler",
+  "youMightAlsoLike": "Vous pourriez aussi aimer",
+  "your_review": "Votre avis",
+  "your_review_placeholder": "Partagez vos commentaires détaillés sur votre expérience avec ce(tte) {{type}}...",
+  "latitude": "Latitude",
+  "longitude": "Longitude",
+  "enter-city-or-address": "Entrez une ville ou une adresse",
+  "saveForLater": {
+    "title": "Sauvegardé pour plus tard",
+    "button": "Sauvegarder pour plus tard",
+    "movedMessage": "L'article a été déplacé vers votre liste Sauvegardé pour plus tard.",
+    "removedMessage": "L'article a été retiré de votre liste Sauvegardé pour plus tard.",
+    "empty": "Aucun article sauvegardé pour plus tard",
+    "errorTitle": "Échec de l'action",
+    "errorMessage": "Nous n'avons pas pu sauvegarder cet article pour plus tard. Veuillez réessayer.",
+    "moveToCart": "Déplacer vers le panier",
+    "clearAll": "Effacer tous les articles sauvegardés",
+    "header": "Vos articles sauvegardés pour plus tard",
+    "moveSuccess": {
+      "title": "Article déplacé",
+      "description": "L'article a été déplacé vers votre panier avec succès."
+    },
+    "moveFailed": {
+      "title": "Échec de l'action",
+      "description": "Nous n'avons pas pu déplacer cet article vers votre panier. Veuillez réessayer."
+    }
+  },
+  "search_keywords": "Mots-clés de recherche",
+  "start_typing_to_search": "Commencez à taper pour rechercher...",
+  "return_items": "Retourner des articles",
+  "return_items_desc": "Sélectionnez les articles que vous souhaitez retourner.",
+  "return_by": "Retour avant le",
+  "return_requested": "Retour demandé",
+  "return_reason_title": "Dites-nous pourquoi vous retournez cet article",
+  "return_reason_subtitle": "Ajoutez des détails pour nous aider à traiter votre retour plus rapidement.",
+  "return_reason_placeholder": "Décrivez la raison du retour",
+  "return_reason_required": "Veuillez fournir une raison de retour.",
+  "upload_supporting_photos": "Téléverser des photos à l'appui",
+  "remove_image": "Retirer l'image",
+  "submit_request": "Soumettre la demande",
+  "return_request_submitted": "Demande de retour soumise",
+  "return_request_success_msg": "Votre demande de retour a été soumise avec succès.",
+  "return_request_failed": "Échec de la demande de retour",
+  "return_request_cancelled": "Demande de retour annulée",
+  "return_request_cancelled_desc": "Votre demande de retour a été annulée avec succès.",
+  "return_request_cancel_failed": "Impossible d'annuler la demande",
+  "return_requests_title": "Demandes de retour",
+  "return_requests_subtitle": "Suivez vos demandes de retour soumises et annulez-les si nécessaire.",
+  "view_return_requests": "Voir les demandes de retour",
+  "no_return_requests": "Aucune demande de retour pour le moment.",
+  "cancel_request": "Annuler la demande",
+  "pickup_date": "Date de ramassage",
+  "reference": "Référence",
+  "return_evidence": "Preuve de retour",
+  "reason": "Raison",
+  "seller_comment": "Commentaire du vendeur",
+  "sellerReviews": {
+    "title": "{{count}} Avis",
+    "subtitle": "{{count}} sur {{total}} avis",
+
+    "sortAriaLabel": "Trier les avis",
+
+    "sort": {
+      "latest": "Plus récents",
+      "oldest": "Plus anciens"
+    },
+
+    "error": "Échec du chargement des avis. Veuillez réessayer.",
+    "noData": "Aucun avis trouvé."
+  },
+  "could_not_load_some_images": "Impossible de charger certaines images.",
+  "image_load_failed": "Échec du chargement de l'image.",
+  "not_found": "Introuvable",
+  "no_product_found": "Aucun produit trouvé",
+  "no_product_available": "Nous pensons que ce produit n'est pas disponible à votre emplacement.",
+  "add": "Ajouter",
+  "removedItems": {
+    "singleTitle": "Un article a été retiré de votre panier",
+    "multipleTitle": "Certains articles ont été retirés de votre panier",
+    "description": "Ces articles ne sont pas disponibles pour l'emplacement sélectionné et ont été retirés.",
+    "qty": "Qté",
+    "store": "Magasin",
+    "empty": "Aucun article retiré",
+    "close": "Fermer"
+  },
+
+  "failedItems": {
+    "singleTitle": "Impossible d'ajouter l'article au panier",
+    "multipleTitle": "Impossible d'ajouter certains articles au panier",
+    "description": "Les articles suivants n'ont pas pu être ajoutés à votre panier.",
+    "qty": "Qté",
+    "store": "Magasin",
+    "reason": "Raison",
+    "empty": "Aucun article en échec",
+    "okay": "D'accord"
+  },
+
+  "handlingCharges": "Frais de manutention",
+  "dropOffFee": "Frais de dépôt",
+  "promoDiscountApplied": "Rabais promo appliqué",
+  "cashbackReward": "Remise en argent",
+  "cashbackAwarded": "Remise en argent accordée",
+  "cashbackAmount": "Montant de la remise en argent",
+  "discountAmount": "Montant du rabais",
+  "credited": "Crédité",
+  "applied": "Appliqué",
+  "code": "Code",
+  "cashbackPendingNote": "La remise en argent sera créditée à votre portefeuille après la finalisation de la commande.",
+  "giftCardApplied": "Carte-cadeau appliquée",
+  "totalAmount": "Montant total",
+  "reset": "Réinitialiser",
+  "quickView": "Aperçu rapide",
+  "cancellation": "Annulation",
+  "returnable": "Retournable",
+  "not_returnable": "Non retournable",
+  "return_days_policy": "Retour sous {{count}} jours",
+  "cancelable": "Commande annulable",
+  "not_cancelable": "Non annulable",
+  "cancel_till_policy": "avant le {{date}}",
+  "featured": "Vedette",
+  "walletAmount": "Montant du portefeuille",
+  "walletAmountUsed": "Montant du portefeuille utilisé",
+  "walletPaymentNote": "{{walletAmount}} payé du portefeuille, {{remainingAmount}} via {{paymentMethod}}",
+  "totalPayable": "Total à payer",
+  "browse": "Parcourir"
+}
