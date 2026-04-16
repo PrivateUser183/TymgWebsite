@@ -116,14 +116,16 @@ test.describe("DELETE 3: Delete Address", () => {
     const res = await request.post(`${API}/user/addresses`, {
       headers: authH(token),
       data: {
-        address_line_1: "456 Delete St",
+        address_line1: "456 Delete St",
         city: "Gatineau",
         state: "Quebec",
         country: "Canada",
-        zip_code: "J8T 2B2",
-        latitude: 45.4765,
-        longitude: -75.7013,
+        zipcode: "J8T2B2",
+        latitude: "45.4765",
+        longitude: "-75.7013",
         address_type: "home",
+        mobile: "+16131234567",
+        country_code: "CA",
       },
     });
     const json = await res.json();
