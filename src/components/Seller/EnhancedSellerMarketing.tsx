@@ -196,7 +196,7 @@ export default function EnhancedSellerMarketing() {
             <div className="hidden md:block relative">
               <div className="relative rounded-xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/hyper_local_features.png"
+                  src="/images/tymg_features.png"
                   alt="TymG Features"
                   className="w-full h-auto object-contain"
                   loading="lazy"
@@ -254,7 +254,7 @@ export default function EnhancedSellerMarketing() {
               {/* IMG 1 — slightly up */}
               <div className="bg-linear-to-br from-gray-200 to-gray-300 rounded-lg aspect-square flex items-center justify-center overflow-hidden -mt-4">
                 <Image
-                  src="/images/Hyperlocal-2.jpg"
+                  src="/images/TymG-2.jpg"
                   alt="About Image 1"
                   className="w-full h-full object-cover"
                   removeWrapper
@@ -264,7 +264,7 @@ export default function EnhancedSellerMarketing() {
               {/* IMG 2 — slightly down */}
               <div className="bg-linear-to-br from-gray-200 to-gray-300 rounded-lg aspect-square flex items-center justify-center overflow-hidden mt-4">
                 <Image
-                  src="/images/Hyperlocal-1.jpg"
+                  src="/images/TymG-1.jpg"
                   alt="About Image 2"
                   className="w-full h-full object-cover"
                   removeWrapper

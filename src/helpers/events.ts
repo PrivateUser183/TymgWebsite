@@ -2,7 +2,6 @@ import { store } from "@/lib/redux/store";
 import { updateCartData } from "./updators";
 import { getCookie, setCookie } from "@/lib/cookies";
 import { UserLocation } from "@/components/Location/types/LocationAutoComplete.types";
-import { addToast } from "@heroui/react";
 import { clearRecentlyViewed } from "@/lib/redux/slices/recentlyViewedSlice";
 import { staticLat, staticLng } from "@/config/constants";
 

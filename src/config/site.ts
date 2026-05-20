@@ -5,7 +5,7 @@ export const siteConfig = {
   description:
     "TymG is your go-to platform for fast and reliable local delivery services.",
   metaKeywords:
-    "local delivery, ecommerce, hyperlocal services, online shopping, delivery app, nearby stores, fast delivery, next-day delivery, local groceries, quick commerce",
+    "local delivery, ecommerce, online shopping, delivery app, nearby stores, fast delivery, next-day delivery, local groceries, quick commerce",
   metaDescription:
     "TymG is your go-to platform for fast and reliable local delivery services. Shop from nearby stores and get your items delivered quickly and hassle-free.",
   navItems: [

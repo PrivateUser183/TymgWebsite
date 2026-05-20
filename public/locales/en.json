@@ -1015,7 +1015,7 @@
         "badge": "Elevate Your Brand With Us",
         "titleMain": "Empowering Your Success with",
         "titleAccent": "Digital Expertise",
-        "description": "Designed for hyperlocal commerce. Enable online ordering, manage your catalog, and connect fulfillment options that fit your operations.",
+        "description": "Designed for local commerce. Enable online ordering, manage your catalog, and connect fulfillment options that fit your operations.",
         "explore": "Explore More",
         "registerNow": "Register Now",
         "bubble": {
@@ -1038,7 +1038,7 @@
         "badge": "About Us",
         "titleMain": "Empowering Your Success with",
         "titleAccent": "Digital Expertise",
-        "description": "We support local commerce by connecting sellers with nearby customers through hyperlocal fulfillment. The platform helps businesses grow while simplifying logistics, payments, and technology.",
+        "description": "We support local commerce by connecting sellers with nearby customers through fast local fulfillment. The platform helps businesses grow while simplifying logistics, payments, and technology.",
         "button": "About Us",
         "metrics": {
           "marketingGrowth": "Marketing & Business Growth",
@@ -1064,7 +1064,7 @@
           "localFulfillment": {
             "title": "Local Fulfillment",
             "desc": "Optimized for nearby orders",
-            "metric": "Hyperlocal"
+            "metric": "Local"
           },
           "businessInsights": {
             "title": "Business Insights",

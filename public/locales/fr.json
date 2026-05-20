@@ -1015,7 +1015,7 @@
         "badge": "Élevez votre marque avec nous",
         "titleMain": "Propulser votre succès avec une",
         "titleAccent": "Expertise numérique",
-        "description": "Conçu pour le commerce hyperlocal. Activez les commandes en ligne, gérez votre catalogue et connectez les options d'exécution adaptées à vos opérations.",
+        "description": "Conçu pour le commerce local. Activez les commandes en ligne, gérez votre catalogue et connectez les options d'exécution adaptées à vos opérations.",
         "explore": "Explorer davantage",
         "registerNow": "S'inscrire maintenant",
         "bubble": {
@@ -1038,7 +1038,7 @@
         "badge": "À propos de nous",
         "titleMain": "Propulser votre succès avec une",
         "titleAccent": "Expertise numérique",
-        "description": "Nous soutenons le commerce local en connectant les vendeurs avec les clients à proximité grâce à l'exécution hyperlocale. La plateforme aide les entreprises à croître tout en simplifiant la logistique, les paiements et la technologie.",
+        "description": "Nous soutenons le commerce local en connectant les vendeurs avec les clients à proximité grâce à une exécution locale rapide. La plateforme aide les entreprises à croître tout en simplifiant la logistique, les paiements et la technologie.",
         "button": "À propos de nous",
         "metrics": {
           "marketingGrowth": "Marketing et croissance de l'entreprise",
@@ -1064,7 +1064,7 @@
           "localFulfillment": {
             "title": "Exécution locale",
             "desc": "Optimisé pour les commandes à proximité",
-            "metric": "Hyperlocal"
+            "metric": "Local"
           },
           "businessInsights": {
             "title": "Aperçus d'affaires",

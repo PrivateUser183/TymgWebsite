@@ -36,7 +36,7 @@ export default function SellerMarketingContent() {
       icon: <Clock className="w-6 h-6" />,
       title: "10-30 Min Delivery",
       description:
-        "Hyperlocal delivery ensures your customers get orders super fast",
+        "TymG delivery ensures your customers get orders super fast",
     },
     {
       icon: <BarChart3 className="w-6 h-6" />,
@@ -93,7 +93,7 @@ export default function SellerMarketingContent() {
                 🎉 Join 10,000+ Successful Sellers
               </div>
               <h1 className="text-2xl md:text-4xl font-bold mb-3 leading-tight">
-                Grow Your Business with HyperLocal Delivery
+                Grow Your Business with TymG Delivery
               </h1>
               <p className="text-base md:text-lg mb-4 text-blue-50">
                 We handle delivery, you handle growth. Start selling in your
