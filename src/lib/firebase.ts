@@ -266,6 +266,15 @@ export const getFirebaseErrorMessage = (error: FirebaseError) => {
       return "Network error. Please check your connection and try again.";
     case "auth/captcha-check-failed":
       return "reCAPTCHA verification failed. Please try again.";
+    case "auth/operation-not-allowed":
+      return "Phone sign-in is not enabled for your region yet. The TymG team has been notified — please use Google or Apple sign-in for now, or try again later.";
+    case "auth/unsupported-first-factor":
+      return "This sign-in method is not enabled. Please use Google or Apple sign-in instead.";
+    case "auth/billing-not-enabled":
+      return "SMS service is temporarily unavailable. Please use Google or Apple sign-in, or try again later.";
+    case "auth/invalid-app-credential":
+    case "auth/missing-app-credential":
+      return "App verification failed. Please refresh the page and try again.";
     default:
       return error.message || "An error occurred. Please try again.";
   }
