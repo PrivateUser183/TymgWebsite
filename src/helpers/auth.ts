@@ -432,7 +432,7 @@ export const checkEmailExists = async (
       value: email,
     });
 
-    if (response.success || response.data?.exists) {
+    if (response.data?.exists === true) {
       setFieldErrors((prev) => ({
         ...prev,
         email: i18n.t("email_check.email_exists"),
@@ -475,7 +475,7 @@ export const checkPhoneExists = async (
       value: phone,
     });
 
-    if (response.success || response.data?.exists) {
+    if (response.data?.exists === true) {
       setFieldErrors((prev) => ({
         ...prev,
         phone: i18n.t("phone_check.phone_exists"),
